@@ -4,21 +4,22 @@
 #pragma hdrstop
 
 #include "Unit1.h"
+#include "Unit2.h"
 // #include "Clanovi.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
-TForm1 *Form1;
+TFormClanoviPosudbe *FormClanoviPosudbe;
 
 //Clanovi clan;
 
 //---------------------------------------------------------------------------
-__fastcall TForm1::TForm1(TComponent* Owner)
+__fastcall TFormClanoviPosudbe::TFormClanoviPosudbe(TComponent* Owner)
 	: TForm(Owner)
 {
 }
 //---------------------------------------------------------------------------
-void __fastcall TForm1::btnTraziClick(TObject *Sender)
+void __fastcall TFormClanoviPosudbe::btnTraziClick(TObject *Sender)
 {
 	TClanovi->Filtered = false;
 	TLocateOptions searchOptions;
@@ -41,14 +42,44 @@ void __fastcall TForm1::btnTraziClick(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
-void __fastcall TForm1::gridClanoviDblClick(TObject *Sender)
+
+
+
+void __fastcall TFormClanoviPosudbe::btnNovaPosudbaClick(TObject *Sender)
 {
-	// Clanovi clan;
-	std::wstring aa(gridClanovi->SelectedRows[0].Items[0].begin(),
-					gridClanovi->SelectedRows[0].Items[0].end());
-	ShowMessage(aa.c_str());
+
+	FormPosudba->editAdresa->Text = dbeditAdresa->Text;
+	FormPosudba->editIme->Text = dbEditIme->Text;
+	FormPosudba->editPrezime->Text = dbEditPrezime->Text;
+	FormPosudba->editTelBroj->Text = dbEditTelBroj->Text;
+	FormPosudba->editClanskiBroj->Text = dbEditClanskiBroj->Text;
+
+	if(FormPosudba->ShowModal() == mrOk)
+	{
+
+		if((FormPosudba->dbEditKolicina->Text).ToInt() > 0)
+		{
+
+			TPosudbe->Insert();
+			TPosudbe->FieldByName("isbnKnjige")->AsString = FormPosudba->dbEditIsbn->Text;
+			TPosudbe->FieldByName("datumPosudbe")->AsDateTime = FormPosudba->datePocetna->Date;
+			TPosudbe->FieldByName("datumPovratka")->AsDateTime = FormPosudba->datePovratak->Date;
+			TPosudbe->FieldByName("clanskiBroj")->AsString = FormPosudba->editClanskiBroj->Text;
+			TPosudbe->Post();
+
+
+
+
+			ShowMessage("Uspješna posudba, član " + FormPosudba->dbEditIme->Text + " je posudio knjigu " + FormPosudba->dbEditNaziv->Text);
+		}
+		else{
+            ShowMessage("Neuspješna posudba, navedena knjiga nije na stanju!");
+        }
+	}
+
+//	std::string clanskiBr(gridClanovi->SelectedRows[0].Items[0].begin(), gridClanovi->SelectedRows[0].Items[0].end());
+//	Label3->Caption = clanskiBr.c_str();
 }
 //---------------------------------------------------------------------------
-
 
 
