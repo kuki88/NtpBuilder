@@ -1,0 +1,29 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit2H
+#define Unit2H
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Data.DB.hpp>
+#include <Data.Win.ADODB.hpp>
+#include <Vcl.DBGrids.hpp>
+#include <Vcl.Grids.hpp>
+//---------------------------------------------------------------------------
+class TPosudbaForm : public TForm
+{
+__published:	// IDE-managed Components
+	TADOConnection *ADOConnection1;
+	TADOTable *TKnjige;
+	TDataSource *DKnjige;
+	TDBGrid *DBGrid1;
+private:	// User declarations
+public:		// User declarations
+	__fastcall TPosudbaForm(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TPosudbaForm *PosudbaForm;
+//---------------------------------------------------------------------------
+#endif

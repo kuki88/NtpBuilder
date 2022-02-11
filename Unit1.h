@@ -18,11 +18,11 @@ __published:	// IDE-managed Components
 	TADOConnection *ADOConnection1;
 	TADOTable *TKnjige;
 	TADOTable *TPosudbe;
-	TDBGrid *DBGrid1;
+	TDBGrid *gridPosudbe;
 	TDataSource *DKnjige;
 	TDataSource *DPosudbe;
 	TLabel *Label1;
-	TDBGrid *DBGrid2;
+	TDBGrid *gridClanovi;
 	TLabel *Label2;
 	TADOTable *TClanovi;
 	TDataSource *DClanovi;
@@ -41,6 +41,7 @@ __published:	// IDE-managed Components
 	TEdit *editPrezime;
 	TButton *btnTrazi;
 	void __fastcall btnTraziClick(TObject *Sender);
+	void __fastcall gridClanoviDblClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TForm1(TComponent* Owner);

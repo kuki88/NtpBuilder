@@ -7,10 +7,12 @@
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
-TPosudba *Posudba;
+TPosudbaForm *PosudbaForm;
 //---------------------------------------------------------------------------
-__fastcall TPosudba::TPosudba(TComponent* Owner)
+__fastcall TPosudbaForm::TPosudbaForm(TComponent* Owner)
 	: TForm(Owner)
 {
 }
+
 //---------------------------------------------------------------------------
+

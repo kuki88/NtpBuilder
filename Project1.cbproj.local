@@ -3,13 +3,18 @@
 	<Transactions>
     <Transaction>1899.12.30 00:00:00.000.275,D:\C++ Builder Projects\Knjiznica\Unit1.cpp=D:\C++ Builder Projects\Unit1.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.916,D:\C++ Builder Projects\Knjiznica\Project1.cbproj=D:\C++ Builder Projects\Project1.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.261,=D:\C++ Builder Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.942,=D:\C++ Builder Projects\Project1PCH1.h</Transaction>
     <Transaction>1899.12.30 00:00:00.000.998,=D:\C++ Builder Projects\Unit1.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.485,=D:\C++ Builder Projects\Unit1.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.942,=D:\C++ Builder Projects\Project1PCH1.h</Transaction>
     <Transaction>1899.12.30 00:00:00.000.275,D:\C++ Builder Projects\Knjiznica\Unit1.h=D:\C++ Builder Projects\Unit1.h</Transaction>
     <Transaction>1899.12.30 00:00:00.000.275,D:\C++ Builder Projects\Knjiznica\Unit1.dfm=D:\C++ Builder Projects\Unit1.dfm</Transaction>
     <Transaction>1899.12.30 00:00:00.000.098,D:\C++ Builder Projects\Knjiznica\Project1PCH1.h=D:\C++ Builder Projects\Project1PCH1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.261,=D:\C++ Builder Projects\Project1PCH1.h</Transaction>
     <Transaction>2022.02.11 11:36:26.455,=D:\C++ Builder Projects\Knjiznica\Unit2.cpp</Transaction>
+    <Transaction>2022.02.11 14:02:31.285,=D:\C++ Builder Projects\Knjiznica\Unit3.cpp</Transaction>
+    <Transaction>2022.02.11 14:02:49.670,=D:\C++ Builder Projects\Knjiznica\Unit3.cpp</Transaction>
+    <Transaction>2022.02.11 14:03:14.834,=D:\C++ Builder Projects\Knjiznica\Unit3.cpp</Transaction>
+    <Transaction>2022.02.11 14:03:21.794,D:\C++ Builder Projects\Knjiznica\Clanovi.h=D:\C++ Builder Projects\Knjiznica\Unit3.h</Transaction>
+    <Transaction>2022.02.11 14:03:21.794,D:\C++ Builder Projects\Knjiznica\Clanovi.cpp=D:\C++ Builder Projects\Knjiznica\Unit3.cpp</Transaction>
   </Transactions>
 </BorlandProject>

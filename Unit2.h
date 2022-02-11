@@ -7,15 +7,34 @@
 #include <Vcl.Controls.hpp>
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
+#include <Data.DB.hpp>
+#include <Data.Win.ADODB.hpp>
+#include <Vcl.DBGrids.hpp>
+#include <Vcl.Grids.hpp>
 //---------------------------------------------------------------------------
-class TPosudba : public TForm
+class TPosudbaForm : public TForm
 {
 __published:	// IDE-managed Components
+	TADOConnection *ADOConnection1;
+	TADOTable *TKnjige;
+	TDBGrid *DBGrid1;
+	TEdit *editISBN;
+	TEdit *editIme;
+	TEdit *editPrezime;
+	TEdit *editTelBroj;
+	TEdit *editAdresa;
+	TLabel *Label1;
+	TLabel *Label2;
+	TLabel *Label3;
+	TLabel *Label4;
+	TLabel *Label5;
+	TDataSource *DdKnjige;
+	void __fastcall DKnjigeDataChange(TObject *Sender, TField *Field);
 private:	// User declarations
 public:		// User declarations
-	__fastcall TPosudba(TComponent* Owner);
+	__fastcall TPosudbaForm(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TPosudba *Posudba;
+extern PACKAGE TPosudbaForm *PosudbaForm;
 //---------------------------------------------------------------------------
 #endif

@@ -18,7 +18,7 @@ object Form1: TForm1
   TextHeight = 13
   object Label1: TLabel
     Left = 32
-    Top = 28
+    Top = 23
     Width = 56
     Height = 19
     Caption = #268'lanovi:'
@@ -42,9 +42,9 @@ object Form1: TForm1
     Font.Style = [fsItalic]
     ParentFont = False
   end
-  object DBGrid1: TDBGrid
+  object gridPosudbe: TDBGrid
     Left = 32
-    Top = 291
+    Top = 292
     Width = 617
     Height = 209
     DataSource = DPosudbe
@@ -97,9 +97,9 @@ object Form1: TForm1
         Visible = True
       end>
   end
-  object DBGrid2: TDBGrid
+  object gridClanovi: TDBGrid
     Left = 32
-    Top = 51
+    Top = 48
     Width = 617
     Height = 185
     DataSource = DClanovi
@@ -110,6 +110,7 @@ object Form1: TForm1
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnDblClick = gridClanoviDblClick
     Columns = <
       item
         Expanded = False
@@ -179,7 +180,7 @@ object Form1: TForm1
     LoginPrompt = False
     Provider = 'SQLOLEDB.1'
     Left = 56
-    Top = 83
+    Top = 203
   end
   object TKnjige: TADOTable
     Active = True
@@ -190,7 +191,7 @@ object Form1: TForm1
     MasterSource = DPosudbe
     TableName = 'Knjige'
     Left = 104
-    Top = 75
+    Top = 195
   end
   object TPosudbe: TADOTable
     Active = True
@@ -201,7 +202,7 @@ object Form1: TForm1
     MasterSource = DClanovi
     TableName = 'Posudbe'
     Left = 152
-    Top = 75
+    Top = 203
     object TPosudbeId: TAutoIncField
       FieldName = 'Id'
       ReadOnly = True
@@ -234,21 +235,21 @@ object Form1: TForm1
   object DKnjige: TDataSource
     DataSet = TKnjige
     Left = 104
-    Top = 131
+    Top = 155
   end
   object DPosudbe: TDataSource
     DataSet = TPosudbe
     Left = 152
-    Top = 131
+    Top = 155
   end
   object TClanovi: TADOTable
     Active = True
     Connection = ADOConnection1
     CursorType = ctStatic
-    Filter = 'ime = "Lovro"'
+    Filter = 'prezime LIKE "K%"'
     TableName = 'Clanovi'
     Left = 200
-    Top = 75
+    Top = 195
     object TClanoviclanskiBroj: TWideStringField
       FieldName = 'clanskiBroj'
       Size = 50
@@ -273,6 +274,6 @@ object Form1: TForm1
   object DClanovi: TDataSource
     DataSet = TClanovi
     Left = 200
-    Top = 131
+    Top = 155
   end
 end
