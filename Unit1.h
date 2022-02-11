@@ -11,8 +11,10 @@
 #include <Data.Win.ADODB.hpp>
 #include <Vcl.DBGrids.hpp>
 #include <Vcl.Grids.hpp>
+#include <Vcl.DBCtrls.hpp>
+#include <Vcl.Mask.hpp>
 //---------------------------------------------------------------------------
-class TForm1 : public TForm
+class TFormClanoviPosudbe : public TForm
 {
 __published:	// IDE-managed Components
 	TADOConnection *ADOConnection1;
@@ -40,13 +42,36 @@ __published:	// IDE-managed Components
 	TButton *btnNovaPosudba;
 	TEdit *editPrezime;
 	TButton *btnTrazi;
+	TLabel *Label9;
+	TDBEdit *DBEdit1;
+	TLabel *Label10;
+	TDBEdit *DBEdit2;
+	TLabel *Label11;
+	TDBEdit *DBEdit3;
+	TLabel *Label12;
+	TDBEdit *DBEdit4;
+	TLabel *Label13;
+	TDBEdit *DBEdit5;
+	TLabel *Label14;
+	TDBEdit *DBEdit6;
+	TGroupBox *GroupBox1;
+	TLabel *Label4;
+	TLabel *Label5;
+	TLabel *Label6;
+	TLabel *Label7;
+	TLabel *Label8;
+	TDBEdit *dbEditClanskiBroj;
+	TDBEdit *dbEditIme;
+	TDBEdit *dbEditPrezime;
+	TDBEdit *dbEditTelBroj;
+	TDBEdit *dbeditAdresa;
 	void __fastcall btnTraziClick(TObject *Sender);
-	void __fastcall gridClanoviDblClick(TObject *Sender);
+	void __fastcall btnNovaPosudbaClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
-	__fastcall TForm1(TComponent* Owner);
+	__fastcall TFormClanoviPosudbe(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TForm1 *Form1;
+extern PACKAGE TFormClanoviPosudbe *FormClanoviPosudbe;
 //---------------------------------------------------------------------------
 #endif

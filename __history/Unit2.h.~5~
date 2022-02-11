@@ -1,0 +1,35 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit2H
+#define Unit2H
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Data.DB.hpp>
+#include <Data.Win.ADODB.hpp>
+#include <Vcl.DBGrids.hpp>
+#include <Vcl.Grids.hpp>
+//---------------------------------------------------------------------------
+class TFormPosudba : public TForm
+{
+__published:	// IDE-managed Components
+	TADOTable *TKnjigePos;
+	TDataSource *DKnjigePos;
+	TButton *Odustani;
+	TButton *Posudi;
+	TDBGrid *DBGrid1;
+	TEdit *editIme;
+	TEdit *editAdresa;
+	TEdit *editTelBroj;
+	TEdit *editISBN;
+	TEdit *Edit5;
+private:	// User declarations
+public:		// User declarations
+	__fastcall TFormPosudba(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TFormPosudba *FormPosudba;
+//---------------------------------------------------------------------------
+#endif
