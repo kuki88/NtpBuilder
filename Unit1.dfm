@@ -387,6 +387,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'fo=False;Initial Catalog=KnjiznicaManagement;Data Source=DESKTOP' +
       '-N5RRRS5\SQLEXPRESS'
 =======
@@ -419,6 +420,14 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     Left = 40
     Top = 195
 >>>>>>> parent of 1fd5167 (testUI)
+=======
+      'fo=False;Initial Catalog=KnjiznicaManagement;Data Source=KUKICRO' +
+      '\SQLEXPRESS'
+    LoginPrompt = False
+    Provider = 'SQLOLEDB.1'
+    Left = 40
+    Top = 195
+>>>>>>> parent of d8b76a5 (first)
   end
   object TKnjige: TADOTable
     Active = True
@@ -428,6 +437,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     MasterFields = 'isbnKnjige'
     MasterSource = DPosudbe
     TableName = 'Knjige'
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -450,6 +460,10 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     Left = 88
     Top = 187
 >>>>>>> parent of 1fd5167 (testUI)
+=======
+    Left = 88
+    Top = 187
+>>>>>>> parent of d8b76a5 (first)
   end
   object TPosudbe: TADOTable
     Active = True
@@ -459,6 +473,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     MasterFields = 'clanskiBroj'
     MasterSource = DClanovi
     TableName = 'Posudbe'
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -476,6 +491,10 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     Left = 136
     Top = 195
 >>>>>>> parent of 1fd5167 (testUI)
+=======
+    Left = 136
+    Top = 195
+>>>>>>> parent of d8b76a5 (first)
     object TPosudbeId: TAutoIncField
       FieldName = 'Id'
       ReadOnly = True
@@ -496,6 +515,9 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     end
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of d8b76a5 (first)
 =======
 >>>>>>> parent of d8b76a5 (first)
     object TPosudbeNazivKnjige: TStringField
@@ -511,6 +533,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
   end
   object DKnjige: TDataSource
     DataSet = TKnjige
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     Left = 160
@@ -545,6 +568,15 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     Left = 136
     Top = 147
 >>>>>>> parent of 1fd5167 (testUI)
+=======
+    Left = 88
+    Top = 147
+  end
+  object DPosudbe: TDataSource
+    DataSet = TPosudbe
+    Left = 136
+    Top = 147
+>>>>>>> parent of d8b76a5 (first)
   end
   object TClanovi: TADOTable
     Active = True
@@ -552,6 +584,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     CursorType = ctStatic
     Filter = 'prezime LIKE "K%"'
     TableName = 'Clanovi'
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -565,6 +598,10 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     Left = 184
     Top = 187
 >>>>>>> parent of 1fd5167 (testUI)
+=======
+    Left = 184
+    Top = 187
+>>>>>>> parent of d8b76a5 (first)
     object TClanoviclanskiBroj: TWideStringField
       FieldName = 'clanskiBroj'
       Size = 50
@@ -585,6 +622,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
       FieldName = 'adresa'
       Size = 50
     end
+<<<<<<< HEAD
 <<<<<<< HEAD
   end
   object DClanovi: TDataSource
@@ -612,5 +650,12 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     Left = 184
     Top = 147
 >>>>>>> parent of 1fd5167 (testUI)
+=======
+  end
+  object DClanovi: TDataSource
+    DataSet = TClanovi
+    Left = 184
+    Top = 147
+>>>>>>> parent of d8b76a5 (first)
   end
 end

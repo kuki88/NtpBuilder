@@ -19,6 +19,7 @@ class TFormClanoviPosudbe : public TForm
 __published:	// IDE-managed Components
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	TADOConnection *ADOConnection1;
 	TADOTable *TKnjige;
 	TADOTable *TPosudbe;
@@ -47,6 +48,11 @@ __published:	// IDE-managed Components
 	TADOTable *TKnjige;
 	TADOTable *TPosudbe;
 >>>>>>> parent of d8b76a5 (first)
+=======
+	TADOConnection *ADOConnection1;
+	TADOTable *TKnjige;
+	TADOTable *TPosudbe;
+>>>>>>> parent of d8b76a5 (first)
 	TDBGrid *gridPosudbe;
 	TDataSource *DKnjige;
 	TDataSource *DPosudbe;
@@ -54,8 +60,11 @@ __published:	// IDE-managed Components
 	TDBGrid *gridClanovi;
 	TLabel *Label2;
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of bef97b7 (Revert "first")
 =======
+=======
+>>>>>>> parent of d8b76a5 (first)
 	TADOTable *TClanovi;
 	TDataSource *DClanovi;
 	TAutoIncField *TPosudbeId;
@@ -69,6 +78,9 @@ __published:	// IDE-managed Components
 	TStringField *TClanoviprezime;
 	TStringField *TClanovitelefonskiBroj;
 	TStringField *TClanoviadresa;
+<<<<<<< HEAD
+>>>>>>> parent of d8b76a5 (first)
+=======
 >>>>>>> parent of d8b76a5 (first)
 	TButton *btnNovaPosudba;
 	TEdit *editPrezime;

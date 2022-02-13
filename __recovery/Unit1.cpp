@@ -48,6 +48,7 @@ void __fastcall TFormClanoviPosudbe::btnTraziClick(TObject *Sender)
 
 void __fastcall TFormClanoviPosudbe::btnNovaPosudbaClick(TObject *Sender)
 {
+<<<<<<< HEAD:__recovery/Unit1.cpp
 <<<<<<< HEAD:__history/Unit1.cpp.~33~
 
 
@@ -59,6 +60,8 @@ void __fastcall TFormClanoviPosudbe::btnNovaPosudbaClick(TObject *Sender)
 
 =======
 >>>>>>> parent of d8b76a5 (first):__history/Unit1.cpp.~22~
+=======
+>>>>>>> parent of d8b76a5 (first):__history/Unit1.cpp.~22~
 	if(FormPosudba->ShowModal() == mrOk)
 	{
 		if((FormPosudba->dbEditKolicina.Text).ToInt() > 0)
@@ -67,15 +70,21 @@ void __fastcall TFormClanoviPosudbe::btnNovaPosudbaClick(TObject *Sender)
 		TPosudbe->FieldByName("datumPosudbe")->AsDateTime = FormPosudba->datePocetna->Date;
 		TPosudbe->FieldByName("datumPovratka")->AsDateTime = FormPosudba->datePovratak->Date;
 		TPosudbe->FieldByName("clanskiBroj")->AsString = FormPosudba->->Text;
+<<<<<<< HEAD:__recovery/Unit1.cpp
 
+=======
+>>>>>>> parent of d8b76a5 (first):__history/Unit1.cpp.~22~
 
 <<<<<<< HEAD:__history/Unit1.cpp.~33~
 
+<<<<<<< HEAD:__recovery/Unit1.cpp
 			ShowMessage("Uspješna posudba, član " + FormPosudba->dbEditIme->Text + " je posudio knjigu " + FormPosudba->dbEditNaziv->Text);
 		}
 		else{
             ShowMessage("Neuspješna posudba, navedena knjiga nije na stanju!");
         }
+=======
+>>>>>>> parent of d8b76a5 (first):__history/Unit1.cpp.~22~
 =======
 >>>>>>> parent of d8b76a5 (first):__history/Unit1.cpp.~22~
 	}
