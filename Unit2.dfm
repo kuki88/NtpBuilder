@@ -367,8 +367,8 @@ object FormPosudba: TFormPosudba
     Connected = True
     ConnectionString = 
       'Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security In' +
-      'fo=False;Initial Catalog=KnjiznicaManagement;Data Source=DESKTOP' +
-      '-N5RRRS5\SQLEXPRESS'
+      'fo=False;Initial Catalog=KnjiznicaManagement;Data Source=KUKICRO' +
+      '\SQLEXPRESS'
     Provider = 'SQLOLEDB.1'
     Left = 104
     Top = 72

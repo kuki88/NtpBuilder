@@ -248,8 +248,14 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     Connected = True
     ConnectionString = 
       'Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security In' +
+<<<<<<< HEAD
       'fo=False;Initial Catalog=KnjiznicaManagement;Data Source=DESKTOP' +
       '-N5RRRS5\SQLEXPRESS'
+=======
+      'fo=False;Initial Catalog=KnjiznicaManagement;Data Source=KUKICRO' +
+      '\SQLEXPRESS'
+    LoginPrompt = False
+>>>>>>> parent of 47ae5f3 (connecton popravljen)
     Provider = 'SQLOLEDB.1'
 <<<<<<< HEAD
     Left = 112

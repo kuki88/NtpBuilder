@@ -6,8 +6,11 @@
 #include "Unit1.h"
 #include "Unit2.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "Unit3.h"
 
+=======
+>>>>>>> parent of 47ae5f3 (connecton popravljen)
 =======
 >>>>>>> parent of 47ae5f3 (connecton popravljen)
 // #include "Clanovi.h"
@@ -76,9 +79,12 @@ void __fastcall TFormClanoviPosudbe::btnNovaPosudbaClick(TObject *Sender)
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 			ShowMessage("Uspješna posudba, član " + FormPosudba->editIme->Text + " je posudio knjigu " + FormPosudba->dbEditNaziv->Text);
 =======
+=======
+>>>>>>> parent of 47ae5f3 (connecton popravljen)
 			ShowMessage("Uspješna posudba, član " + FormPosudba->dbEditIme->Text + " je posudio knjigu " + FormPosudba->dbEditNaziv->Text);
 >>>>>>> parent of 47ae5f3 (connecton popravljen)
 		}
