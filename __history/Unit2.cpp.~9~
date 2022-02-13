@@ -36,5 +36,3 @@ void __fastcall TFormPosudba::PosudiClick(TObject *Sender)
 //	}
 }
 //---------------------------------------------------------------------------
-
-
