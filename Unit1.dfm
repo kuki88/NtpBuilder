@@ -385,6 +385,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
       'Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security In' +
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'fo=False;Initial Catalog=KnjiznicaManagement;Data Source=DESKTOP' +
       '-N5RRRS5\SQLEXPRESS'
 =======
@@ -402,6 +403,8 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     Top = 112
 >>>>>>> parent of bef97b7 (Revert "first")
 =======
+=======
+>>>>>>> parent of 47ae5f3 (connecton popravljen)
       'fo=False;Initial Catalog=KnjiznicaManagement;Data Source=KUKICRO' +
       '\SQLEXPRESS'
     LoginPrompt = False

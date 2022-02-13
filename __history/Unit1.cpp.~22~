@@ -51,6 +51,7 @@ void __fastcall TFormClanoviPosudbe::btnTraziClick(TObject *Sender)
 
 void __fastcall TFormClanoviPosudbe::btnNovaPosudbaClick(TObject *Sender)
 {
+<<<<<<< HEAD:__history/Unit1.cpp.~22~
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD:__history/Unit1.cpp.~33~
@@ -65,6 +66,8 @@ void __fastcall TFormClanoviPosudbe::btnNovaPosudbaClick(TObject *Sender)
 =======
 >>>>>>> parent of d8b76a5 (first):__history/Unit1.cpp.~22~
 >>>>>>> parent of d8b76a5 (first)
+=======
+>>>>>>> parent of 47ae5f3 (connecton popravljen):__history/Unit1.cpp.~32~
 	if(FormPosudba->ShowModal() == mrOk)
 	{
 		if((FormPosudba->dbEditKolicina.Text).ToInt() > 0)
@@ -73,12 +76,16 @@ void __fastcall TFormClanoviPosudbe::btnNovaPosudbaClick(TObject *Sender)
 		TPosudbe->FieldByName("datumPosudbe")->AsDateTime = FormPosudba->datePocetna->Date;
 		TPosudbe->FieldByName("datumPovratka")->AsDateTime = FormPosudba->datePovratak->Date;
 		TPosudbe->FieldByName("clanskiBroj")->AsString = FormPosudba->->Text;
+<<<<<<< HEAD:__history/Unit1.cpp.~22~
 
+=======
+>>>>>>> parent of 47ae5f3 (connecton popravljen):__history/Unit1.cpp.~32~
 
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD:__history/Unit1.cpp.~33~
 
+<<<<<<< HEAD:__history/Unit1.cpp.~22~
 			ShowMessage("Uspješna posudba, član " + FormPosudba->dbEditIme->Text + " je posudio knjigu " + FormPosudba->dbEditNaziv->Text);
 		}
 		else{
@@ -87,6 +94,8 @@ void __fastcall TFormClanoviPosudbe::btnNovaPosudbaClick(TObject *Sender)
 =======
 >>>>>>> parent of d8b76a5 (first):__history/Unit1.cpp.~22~
 >>>>>>> parent of d8b76a5 (first)
+=======
+>>>>>>> parent of 47ae5f3 (connecton popravljen):__history/Unit1.cpp.~32~
 	}
 
 //	std::string clanskiBr(gridClanovi->SelectedRows[0].Items[0].begin(), gridClanovi->SelectedRows[0].Items[0].end());

@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "Unit3.h"
 
 =======
@@ -17,6 +18,8 @@
 =======
 #include <string.h>
 >>>>>>> parent of 1fd5167 (testUI)
+=======
+>>>>>>> parent of 47ae5f3 (connecton popravljen)
 // #include "Clanovi.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
@@ -84,6 +87,7 @@ void __fastcall TFormClanoviPosudbe::btnNovaPosudbaClick(TObject *Sender)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 			ShowMessage("Uspješna posudba, član " + FormPosudba->editIme->Text + " je posudio knjigu " + FormPosudba->dbEditNaziv->Text);
@@ -93,6 +97,8 @@ void __fastcall TFormClanoviPosudbe::btnNovaPosudbaClick(TObject *Sender)
 			ShowMessage("Uspješna posudba, član " + FormPosudba->dbEditIme->Text + " je posudio knjigu " + FormPosudba->dbEditNaziv->Text);
 >>>>>>> parent of 47ae5f3 (connecton popravljen)
 =======
+=======
+>>>>>>> parent of 47ae5f3 (connecton popravljen)
 			ShowMessage("Uspješna posudba, član " + FormPosudba->dbEditIme->Text + " je posudio knjigu " + FormPosudba->dbEditNaziv->Text);
 >>>>>>> parent of 1fd5167 (testUI)
 		}

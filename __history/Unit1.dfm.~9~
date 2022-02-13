@@ -1,33 +1,9 @@
-<<<<<<< HEAD
-<<<<<<< HEAD:__history/Unit1.dfm.~19~
-<<<<<<< HEAD:__history/Unit3.dfm.~1~
-object Evidencija: TEvidencija
-  Left = 0
-  Top = 0
-  Caption = 'Evidencija'
-  ClientHeight = 476
-  ClientWidth = 663
-=======
-object FormClanoviPosudbe: TFormClanoviPosudbe
-  Left = 0
-  Top = 0
-  Caption = 'FormClanoviPosudbe'
-  ClientHeight = 808
-  ClientWidth = 734
->>>>>>> parent of bef97b7 (Revert "first"):__history/Unit1.dfm.~19~
-=======
-=======
->>>>>>> parent of d8b76a5 (first)
 object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Form1'
   ClientHeight = 580
   ClientWidth = 666
-<<<<<<< HEAD
->>>>>>> parent of 47ae5f3 (connecton popravljen):__history/Unit1.dfm.~9~
-=======
->>>>>>> parent of d8b76a5 (first)
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -36,27 +12,8 @@ object Form1: TForm1
   Font.Style = []
   OldCreateOrder = False
   DesignSize = (
-<<<<<<< HEAD
-<<<<<<< HEAD:__history/Unit1.dfm.~19~
-<<<<<<< HEAD:__history/Unit3.dfm.~1~
-    663
-    476)
-  PixelsPerInch = 96
-  TextHeight = 13
-  object Label2: TLabel
-    Left = 53
-    Top = 171
-=======
-    734
-    808)
-=======
     666
     580)
->>>>>>> parent of 47ae5f3 (connecton popravljen):__history/Unit1.dfm.~9~
-=======
-    666
-    580)
->>>>>>> parent of d8b76a5 (first)
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
@@ -73,19 +30,8 @@ object Form1: TForm1
     ParentFont = False
   end
   object Label2: TLabel
-<<<<<<< HEAD
-<<<<<<< HEAD:__history/Unit1.dfm.~19~
-    Left = 8
-    Top = 566
->>>>>>> parent of bef97b7 (Revert "first"):__history/Unit1.dfm.~19~
-=======
     Left = 32
     Top = 267
->>>>>>> parent of 47ae5f3 (connecton popravljen):__history/Unit1.dfm.~9~
-=======
-    Left = 32
-    Top = 267
->>>>>>> parent of d8b76a5 (first)
     Width = 60
     Height = 19
     Caption = 'Posudbe:'
@@ -96,77 +42,10 @@ object Form1: TForm1
     Font.Style = [fsItalic]
     ParentFont = False
   end
-<<<<<<< HEAD
-<<<<<<< HEAD:__history/Unit3.dfm.~1~
-  object Label1: TLabel
-    Left = 32
-    Top = 338
-    Width = 10
-    Height = 13
-    Caption = 'Id'
-    FocusControl = DBEdit1
-  end
-  object Label3: TLabel
-    Left = 279
-    Top = 338
-    Width = 73
-    Height = 13
-    Caption = 'datumPovratka'
-    FocusControl = DBEdit4
-  end
-  object Label4: TLabel
-    Left = 32
-    Top = 384
-    Width = 48
-    Height = 13
-    Caption = 'isbnKnjige'
-    FocusControl = DBEdit2
-  end
-  object Label5: TLabel
-    Left = 279
-    Top = 384
-    Width = 50
-    Height = 13
-    Caption = 'clanskiBroj'
-    FocusControl = DBEdit5
-  end
-  object Label6: TLabel
-    Left = 32
-    Top = 430
-    Width = 71
-    Height = 13
-    Caption = 'datumPosudbe'
-    FocusControl = DBEdit3
-  end
-  object Label7: TLabel
-    Left = 279
-    Top = 430
-    Width = 58
-    Height = 13
-    Caption = 'Naziv Knjige'
-    FocusControl = DBEdit6
-  end
-  object gridPosudbe: TDBGrid
-    Left = -2
-    Top = -3
-=======
-  object gridPosudbe: TDBGrid
-<<<<<<< HEAD:__history/Unit1.dfm.~19~
-    Left = 8
-    Top = 591
->>>>>>> parent of bef97b7 (Revert "first"):__history/Unit1.dfm.~19~
-    Width = 700
-=======
-    Left = 32
-    Top = 292
-    Width = 617
->>>>>>> parent of 47ae5f3 (connecton popravljen):__history/Unit1.dfm.~9~
-=======
   object gridPosudbe: TDBGrid
     Left = 32
     Top = 292
     Width = 617
->>>>>>> parent of d8b76a5 (first)
     Height = 209
     DataSource = DPosudbe
     ReadOnly = True
@@ -218,27 +97,6 @@ object Form1: TForm1
         Visible = True
       end>
   end
-<<<<<<< HEAD
-<<<<<<< HEAD:__history/Unit3.dfm.~1~
-  object DBEdit1: TDBEdit
-    Left = 32
-    Top = 357
-    Width = 200
-    Height = 21
-    DataField = 'Id'
-    DataSource = DPosudbe
-    TabOrder = 1
-  end
-  object DBEdit2: TDBEdit
-    Left = 32
-    Top = 403
-    Width = 200
-    Height = 21
-    DataField = 'isbnKnjige'
-    DataSource = DPosudbe
-=======
-=======
->>>>>>> parent of d8b76a5 (first)
   object gridClanovi: TDBGrid
     Left = 32
     Top = 48
@@ -295,32 +153,8 @@ object Form1: TForm1
     Height = 28
     Anchors = [akBottom]
     Caption = 'Nova Posudba'
-<<<<<<< HEAD
->>>>>>> parent of bef97b7 (Revert "first"):__history/Unit1.dfm.~19~
     TabOrder = 2
   end
-<<<<<<< HEAD:__history/Unit3.dfm.~1~
-  object DBEdit3: TDBEdit
-    Left = 32
-    Top = 446
-    Width = 200
-    Height = 21
-    DataField = 'datumPosudbe'
-    DataSource = DPosudbe
-    TabOrder = 3
-  end
-  object DBEdit4: TDBEdit
-    Left = 279
-    Top = 357
-    Width = 200
-    Height = 21
-    DataField = 'datumPovratka'
-    DataSource = DPosudbe
-=======
-=======
-    TabOrder = 2
-  end
->>>>>>> parent of d8b76a5 (first)
   object editPrezime: TEdit
     Left = 440
     Top = 20
@@ -334,383 +168,30 @@ object Form1: TForm1
     Width = 75
     Height = 25
     Caption = 'Tra'#382'i'
-<<<<<<< HEAD
->>>>>>> parent of bef97b7 (Revert "first"):__history/Unit1.dfm.~19~
-    TabOrder = 4
-  end
-<<<<<<< HEAD:__history/Unit1.dfm.~19~
-<<<<<<< HEAD:__history/Unit3.dfm.~1~
-  object DBEdit5: TDBEdit
-    Left = 279
-    Top = 403
-    Width = 200
-    Height = 21
-    DataField = 'clanskiBroj'
-    DataSource = DClanovi
-    TabOrder = 5
-=======
-=======
     TabOrder = 4
     OnClick = btnTraziClick
   end
-<<<<<<<< HEAD:__history/Unit1.dfm.~9~
-========
->>>>>>> parent of d8b76a5 (first)
-  object DBEdit1: TDBEdit
-    Left = 8
-    Top = 461
-    Width = 200
-    Height = 21
-    DataField = 'Id'
-<<<<<<< HEAD
-    DataSource = DPosudbe
-=======
-<<<<<<< HEAD
-    DataSource = DPosudbe
-=======
->>>>>>> parent of bef97b7 (Revert "first")
->>>>>>> parent of d8b76a5 (first)
-    TabOrder = 5
-  end
-  object DBEdit2: TDBEdit
-    Left = 8
-    Top = 503
-    Width = 200
-    Height = 21
-    DataField = 'isbnKnjige'
-<<<<<<< HEAD
-    DataSource = DPosudbe
-=======
-<<<<<<< HEAD
-    DataSource = DPosudbe
-=======
->>>>>>> parent of bef97b7 (Revert "first")
->>>>>>> parent of d8b76a5 (first)
-    TabOrder = 6
-  end
-  object DBEdit3: TDBEdit
-    Left = 8
-    Top = 543
-    Width = 200
-    Height = 21
-    DataField = 'datumPosudbe'
-<<<<<<< HEAD
-    DataSource = DPosudbe
-=======
-<<<<<<< HEAD
-    DataSource = DPosudbe
-=======
->>>>>>> parent of bef97b7 (Revert "first")
->>>>>>> parent of d8b76a5 (first)
-    TabOrder = 7
-  end
-  object DBEdit4: TDBEdit
-    Left = 222
-    Top = 462
-    Width = 200
-    Height = 21
-    DataField = 'datumPovratka'
-<<<<<<< HEAD
-    DataSource = DPosudbe
-=======
-<<<<<<< HEAD
-    DataSource = DPosudbe
-=======
->>>>>>> parent of bef97b7 (Revert "first")
->>>>>>> parent of d8b76a5 (first)
-    TabOrder = 8
-  end
-  object DBEdit5: TDBEdit
-    Left = 222
-    Top = 503
-    Width = 200
-    Height = 21
-    DataField = 'clanskiBroj'
-<<<<<<< HEAD
-    DataSource = DPosudbe
-=======
-<<<<<<< HEAD
-    DataSource = DPosudbe
-=======
->>>>>>> parent of bef97b7 (Revert "first")
->>>>>>> parent of d8b76a5 (first)
-    TabOrder = 9
-  end
-  object DBEdit6: TDBEdit
-    Left = 222
-    Top = 543
-    Width = 200
-    Height = 21
-    DataField = 'Naziv Knjige'
-<<<<<<< HEAD
-    DataSource = DPosudbe
-=======
-<<<<<<< HEAD
-    DataSource = DPosudbe
-=======
->>>>>>> parent of bef97b7 (Revert "first")
->>>>>>> parent of d8b76a5 (first)
-    TabOrder = 10
-  end
-  object GroupBox1: TGroupBox
-    Left = 8
-    Top = 242
-    Width = 425
-    Height = 169
-    TabOrder = 11
-    object Label4: TLabel
-      Left = 3
-      Top = 20
-      Width = 55
-      Height = 13
-      Caption = #268'lanski broj'
-      FocusControl = dbEditClanskiBroj
-    end
-    object Label5: TLabel
-      Left = 3
-      Top = 67
-      Width = 16
-      Height = 13
-      Caption = 'ime'
-      FocusControl = dbEditIme
-    end
-    object Label6: TLabel
-      Left = 214
-      Top = 67
-      Width = 37
-      Height = 13
-      Caption = 'prezime'
-      FocusControl = dbEditPrezime
-    end
-    object Label7: TLabel
-      Left = 214
-      Top = 108
-      Width = 70
-      Height = 13
-      Caption = 'Telefonski Broj'
-      FocusControl = dbEditTelBroj
-    end
-    object Label8: TLabel
-      Left = 3
-      Top = 108
-      Width = 33
-      Height = 13
-      Caption = 'adresa'
-      FocusControl = dbeditAdresa
-    end
-    object dbEditClanskiBroj: TDBEdit
-      Left = 3
-      Top = 33
-      Width = 200
-      Height = 21
-      DataField = 'clanskiBroj'
-<<<<<<< HEAD
-      DataSource = DClanovi
-=======
-<<<<<<< HEAD
-      DataSource = DClanovi
-=======
->>>>>>> parent of bef97b7 (Revert "first")
->>>>>>> parent of d8b76a5 (first)
-      TabOrder = 0
-    end
-    object dbEditIme: TDBEdit
-      Left = 3
-      Top = 81
-      Width = 200
-      Height = 21
-      DataField = 'ime'
-<<<<<<< HEAD
-      DataSource = DClanovi
-=======
-<<<<<<< HEAD
-      DataSource = DClanovi
-=======
->>>>>>> parent of bef97b7 (Revert "first")
->>>>>>> parent of d8b76a5 (first)
-      TabOrder = 1
-    end
-    object dbEditPrezime: TDBEdit
-      Left = 214
-      Top = 81
-      Width = 200
-      Height = 21
-      DataField = 'prezime'
-<<<<<<< HEAD
-      DataSource = DClanovi
-=======
-<<<<<<< HEAD
-      DataSource = DClanovi
-=======
->>>>>>> parent of bef97b7 (Revert "first")
->>>>>>> parent of d8b76a5 (first)
-      TabOrder = 2
-    end
-    object dbEditTelBroj: TDBEdit
-      Left = 214
-      Top = 124
-      Width = 200
-      Height = 21
-      DataField = 'telefonskiBroj'
-<<<<<<< HEAD
-      DataSource = DClanovi
-=======
-<<<<<<< HEAD
-      DataSource = DClanovi
-=======
->>>>>>> parent of bef97b7 (Revert "first")
->>>>>>> parent of d8b76a5 (first)
-      TabOrder = 3
-    end
-    object dbeditAdresa: TDBEdit
-      Left = 3
-      Top = 124
-      Width = 200
-      Height = 21
-      DataField = 'adresa'
-<<<<<<< HEAD
-      DataSource = DClanovi
-      TabOrder = 4
-    end
-  end
-=======
->>>>>>> parent of 47ae5f3 (connecton popravljen):__history/Unit1.dfm.~9~
-=======
-<<<<<<< HEAD
-      DataSource = DClanovi
-=======
->>>>>>> parent of bef97b7 (Revert "first")
-      TabOrder = 4
-    end
-  end
->>>>>>>> parent of d8b76a5 (first):__history/Unit1.dfm.~20~
->>>>>>> parent of d8b76a5 (first)
   object ADOConnection1: TADOConnection
     Connected = True
     ConnectionString = 
       'Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security In' +
-<<<<<<< HEAD
-=======
-<<<<<<<< HEAD:__history/Unit1.dfm.~9~
->>>>>>> parent of d8b76a5 (first)
       'fo=False;Initial Catalog=KnjiznicaManagement;Data Source=KUKICRO' +
       '\SQLEXPRESS'
     LoginPrompt = False
     Provider = 'SQLOLEDB.1'
-<<<<<<< HEAD
-<<<<<<< HEAD:__history/Unit1.dfm.~19~
-    Left = 40
-    Top = 195
->>>>>>> parent of bef97b7 (Revert "first"):__history/Unit1.dfm.~19~
-=======
     Left = 32
     Top = 75
->>>>>>> parent of 47ae5f3 (connecton popravljen):__history/Unit1.dfm.~9~
-  end
-  object DBEdit6: TDBEdit
-    Left = 279
-    Top = 446
-    Width = 200
-    Height = 21
-    DataField = 'Naziv Knjige'
-    DataSource = DPosudbe
-    TabOrder = 6
-  end
-  object DClanovi: TDataSource
-    DataSet = TClanovi
-    Left = 216
-    Top = 99
-  end
-  object TClanovi: TADOTable
-    Active = True
-    Connection = ADOConnection1
-    CursorType = ctStatic
-<<<<<<< HEAD:__history/Unit3.dfm.~1~
-    Filter = 'prezime LIKE "K%"'
-    TableName = 'Clanovi'
-    Left = 216
-    Top = 139
-    object TClanoviclanskiBroj: TWideStringField
-      FieldName = 'clanskiBroj'
-      Size = 50
-    end
-    object TClanoviime: TStringField
-      FieldName = 'ime'
-      Size = 50
-    end
-    object TClanoviprezime: TStringField
-      FieldName = 'prezime'
-      Size = 50
-    end
-    object TClanovitelefonskiBroj: TStringField
-      FieldName = 'telefonskiBroj'
-      Size = 30
-    end
-    object TClanoviadresa: TStringField
-      FieldName = 'adresa'
-      Size = 50
-    end
-=======
-=======
-    Left = 32
-    Top = 75
-========
-      'fo=False;Initial Catalog=KnjiznicaManagement;Data Source=DESKTOP' +
-      '-N5RRRS5\SQLEXPRESS'
-<<<<<<< HEAD
-    LoginPrompt = False
-    Provider = 'SQLOLEDB.1'
-    Left = 40
-    Top = 195
-=======
-    Provider = 'SQLOLEDB.1'
-    Left = 96
-    Top = 112
->>>>>>> parent of bef97b7 (Revert "first")
->>>>>>>> parent of d8b76a5 (first):__history/Unit1.dfm.~20~
   end
   object TKnjige: TADOTable
     Active = True
     Connection = ADOConnection1
     CursorType = ctStatic
-<<<<<<<< HEAD:__history/Unit1.dfm.~9~
     IndexFieldNames = 'ISBN'
     MasterFields = 'isbnKnjige'
     MasterSource = DPosudbe
     TableName = 'Knjige'
     Left = 104
     Top = 75
-========
-<<<<<<< HEAD
->>>>>>> parent of d8b76a5 (first)
-    IndexFieldNames = 'ISBN'
-    MasterFields = 'isbnKnjige'
-    MasterSource = DPosudbe
-    TableName = 'Knjige'
-<<<<<<< HEAD
-<<<<<<< HEAD:__history/Unit1.dfm.~19~
-    Left = 88
-    Top = 187
->>>>>>> parent of bef97b7 (Revert "first"):__history/Unit1.dfm.~19~
-=======
-    Left = 104
-    Top = 75
->>>>>>> parent of 47ae5f3 (connecton popravljen):__history/Unit1.dfm.~9~
-=======
-    Left = 88
-    Top = 187
-=======
-    TableName = 'Knjige'
-    Left = 256
-    Top = 96
-  end
-  object DKnjige: TDataSource
-    DataSet = TKnjige
-    Left = 256
-    Top = 168
->>>>>>> parent of bef97b7 (Revert "first")
->>>>>>>> parent of d8b76a5 (first):__history/Unit1.dfm.~20~
->>>>>>> parent of d8b76a5 (first)
   end
   object TPosudbe: TADOTable
     Active = True
@@ -720,33 +201,8 @@ object Form1: TForm1
     MasterFields = 'clanskiBroj'
     MasterSource = DClanovi
     TableName = 'Posudbe'
-<<<<<<< HEAD
-<<<<<<< HEAD:__history/Unit1.dfm.~19~
-<<<<<<< HEAD:__history/Unit3.dfm.~1~
-    Left = 168
-    Top = 147
-=======
-    Left = 136
-    Top = 195
->>>>>>> parent of bef97b7 (Revert "first"):__history/Unit1.dfm.~19~
-=======
     Left = 152
     Top = 75
->>>>>>> parent of 47ae5f3 (connecton popravljen):__history/Unit1.dfm.~9~
-=======
-<<<<<<<< HEAD:__history/Unit1.dfm.~9~
-    Left = 152
-    Top = 75
-========
-<<<<<<< HEAD
-    Left = 136
-    Top = 195
-=======
-    Left = 328
-    Top = 96
->>>>>>> parent of bef97b7 (Revert "first")
->>>>>>>> parent of d8b76a5 (first):__history/Unit1.dfm.~20~
->>>>>>> parent of d8b76a5 (first)
     object TPosudbeId: TAutoIncField
       FieldName = 'Id'
       ReadOnly = True
@@ -765,13 +221,6 @@ object Form1: TForm1
       FieldName = 'clanskiBroj'
       Size = 50
     end
-<<<<<<< HEAD
-=======
-<<<<<<<< HEAD:__history/Unit1.dfm.~9~
-========
-<<<<<<< HEAD
->>>>>>>> parent of d8b76a5 (first):__history/Unit1.dfm.~20~
->>>>>>> parent of d8b76a5 (first)
     object TPosudbeNazivKnjige: TStringField
       FieldKind = fkLookup
       FieldName = 'Naziv Knjige'
@@ -783,136 +232,21 @@ object Form1: TForm1
       Lookup = True
     end
   end
-<<<<<<< HEAD
-<<<<<<< HEAD:__history/Unit3.dfm.~1~
-  object DPosudbe: TDataSource
-    DataSet = TPosudbe
-    Left = 168
-    Top = 99
-=======
   object DKnjige: TDataSource
     DataSet = TKnjige
-=======
-  object DKnjige: TDataSource
-    DataSet = TKnjige
-<<<<<<<< HEAD:__history/Unit1.dfm.~9~
->>>>>>> parent of d8b76a5 (first)
     Left = 104
     Top = 131
   end
   object DPosudbe: TDataSource
     DataSet = TPosudbe
-<<<<<<< HEAD
-<<<<<<< HEAD:__history/Unit1.dfm.~19~
-    Left = 136
-    Top = 147
->>>>>>> parent of bef97b7 (Revert "first"):__history/Unit1.dfm.~19~
-=======
     Left = 152
     Top = 131
->>>>>>> parent of 47ae5f3 (connecton popravljen):__history/Unit1.dfm.~9~
-  end
-  object DKnjige: TDataSource
-    DataSet = TKnjige
-    Left = 120
-    Top = 99
-  end
-  object TKnjige: TADOTable
-    Active = True
-    Connection = ADOConnection1
-    CursorType = ctStatic
-<<<<<<< HEAD:__history/Unit3.dfm.~1~
-    IndexFieldNames = 'ISBN'
-    MasterFields = 'isbnKnjige'
-    MasterSource = DPosudbe
-    TableName = 'Knjige'
-    Left = 120
-    Top = 139
-  end
-  object ADOConnection1: TADOConnection
-    Connected = True
-    ConnectionString = 
-      'Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security In' +
-      'fo=False;Initial Catalog=KnjiznicaManagement;Data Source=DESKTOP' +
-      '-N5RRRS5\SQLEXPRESS'
-    LoginPrompt = False
-    Provider = 'SQLOLEDB.1'
-    Left = 72
-=======
-    Filter = 'prezime LIKE "K%"'
-    TableName = 'Clanovi'
-    Left = 200
-    Top = 75
-=======
-    Left = 152
-    Top = 131
-========
-    Left = 88
-    Top = 147
-  end
-  object DPosudbe: TDataSource
-    DataSet = TPosudbe
-    Left = 136
-    Top = 147
-=======
-  end
-  object DPosudbe: TDataSource
-    DataSet = TPosudbe
-    Left = 336
-    Top = 168
->>>>>>> parent of bef97b7 (Revert "first")
->>>>>>>> parent of d8b76a5 (first):__history/Unit1.dfm.~20~
   end
   object TClanovi: TADOTable
     Active = True
     Connection = ADOConnection1
     CursorType = ctStatic
-<<<<<<<< HEAD:__history/Unit1.dfm.~9~
     Filter = 'prezime LIKE "K%"'
-========
-<<<<<<< HEAD
-    Filter = 'prezime LIKE "K%"'
-    TableName = 'Clanovi'
-    Left = 184
-    Top = 187
->>>>>>> parent of d8b76a5 (first)
-    object TClanoviclanskiBroj: TWideStringField
-      FieldName = 'clanskiBroj'
-      Size = 50
-    end
-    object TClanoviime: TStringField
-      FieldName = 'ime'
-      Size = 50
-    end
-    object TClanoviprezime: TStringField
-      FieldName = 'prezime'
-      Size = 50
-    end
-    object TClanovitelefonskiBroj: TStringField
-      FieldName = 'telefonskiBroj'
-      Size = 30
-    end
-    object TClanoviadresa: TStringField
-      FieldName = 'adresa'
-      Size = 50
-    end
-  end
-  object DClanovi: TDataSource
-    DataSet = TClanovi
-<<<<<<< HEAD
-<<<<<<< HEAD:__history/Unit1.dfm.~19~
-    Left = 184
->>>>>>> parent of bef97b7 (Revert "first"):__history/Unit1.dfm.~19~
-    Top = 147
-=======
-    Left = 200
-    Top = 131
->>>>>>> parent of 47ae5f3 (connecton popravljen):__history/Unit1.dfm.~9~
-=======
-    Left = 184
-    Top = 147
-=======
->>>>>>>> parent of d8b76a5 (first):__history/Unit1.dfm.~20~
     TableName = 'Clanovi'
     Left = 200
     Top = 75
@@ -939,14 +273,7 @@ object Form1: TForm1
   end
   object DClanovi: TDataSource
     DataSet = TClanovi
-<<<<<<<< HEAD:__history/Unit1.dfm.~9~
     Left = 200
     Top = 131
-========
-    Left = 416
-    Top = 168
->>>>>>> parent of bef97b7 (Revert "first")
->>>>>>>> parent of d8b76a5 (first):__history/Unit1.dfm.~20~
->>>>>>> parent of d8b76a5 (first)
   end
 end
