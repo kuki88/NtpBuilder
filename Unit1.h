@@ -22,10 +22,12 @@ __published:	// IDE-managed Components
 	TADOConnection *ADOConnection1;
 	TADOTable *TKnjige;
 	TADOTable *TPosudbe;
+	TDBGrid *gridPosudbe;
 	TDataSource *DKnjige;
 	TDataSource *DPosudbe;
 	TLabel *Label1;
 	TDBGrid *gridClanovi;
+	TLabel *Label2;
 	TADOTable *TClanovi;
 	TDataSource *DClanovi;
 	TAutoIncField *TPosudbeId;
@@ -71,6 +73,18 @@ __published:	// IDE-managed Components
 	TButton *btnNovaPosudba;
 	TEdit *editPrezime;
 	TButton *btnTrazi;
+	TLabel *Label9;
+	TDBEdit *DBEdit1;
+	TLabel *Label10;
+	TDBEdit *DBEdit2;
+	TLabel *Label11;
+	TDBEdit *DBEdit3;
+	TLabel *Label12;
+	TDBEdit *DBEdit4;
+	TLabel *Label13;
+	TDBEdit *DBEdit5;
+	TLabel *Label14;
+	TDBEdit *DBEdit6;
 	TGroupBox *GroupBox1;
 	TLabel *Label4;
 	TLabel *Label5;
@@ -84,7 +98,6 @@ __published:	// IDE-managed Components
 	TDBEdit *dbeditAdresa;
 	void __fastcall btnTraziClick(TObject *Sender);
 	void __fastcall btnNovaPosudbaClick(TObject *Sender);
-	void __fastcall gridClanoviDblClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFormClanoviPosudbe(TComponent* Owner);

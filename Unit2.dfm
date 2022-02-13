@@ -2,7 +2,7 @@
   Left = 0
   Top = 0
   Caption = 'Posudba'
-  ClientHeight = 468
+  ClientHeight = 679
   ClientWidth = 751
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -14,7 +14,7 @@
   OnCreate = FormCreate
   DesignSize = (
     751
-    468)
+    679)
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
@@ -111,18 +111,17 @@
   end
   object Odustani: TButton
     Left = 8
-    Top = 399
+    Top = 610
     Width = 365
     Height = 61
     Anchors = [akLeft, akBottom]
     Caption = 'Odustani'
     ModalResult = 2
     TabOrder = 0
-    ExplicitTop = 610
   end
   object Posudi: TButton
     Left = 378
-    Top = 399
+    Top = 610
     Width = 365
     Height = 61
     Anchors = [akRight, akBottom]
@@ -130,7 +129,6 @@
     ModalResult = 1
     TabOrder = 1
     OnClick = PosudiClick
-    ExplicitTop = 610
   end
   object DBGrid1: TDBGrid
     Left = 8
@@ -149,7 +147,7 @@
   end
   object datePocetna: TDateTimePicker
     Left = 85
-    Top = 320
+    Top = 528
     Width = 144
     Height = 21
     Date = 44603.000000000000000000
@@ -158,7 +156,7 @@
   end
   object datePovratak: TDateTimePicker
     Left = 236
-    Top = 320
+    Top = 528
     Width = 147
     Height = 21
     Date = 44603.000000000000000000
@@ -166,7 +164,10 @@
     TabOrder = 4
   end
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 1fd5167 (testUI)
   object dbEditIme: TDBEdit
     Left = 85
     Top = 402
@@ -215,7 +216,10 @@
     ReadOnly = True
     TabOrder = 10
   end
+<<<<<<< HEAD
 >>>>>>> parent of bef97b7 (Revert "first")
+=======
+>>>>>>> parent of 1fd5167 (testUI)
   object dbEditNaziv: TDBEdit
     Left = 539
     Top = 200
@@ -227,6 +231,7 @@
     ReadOnly = True
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     TabOrder = 5
 =======
     TabOrder = 10
@@ -234,6 +239,9 @@
 =======
     TabOrder = 11
 >>>>>>> parent of d8b76a5 (first)
+=======
+    TabOrder = 11
+>>>>>>> parent of 1fd5167 (testUI)
   end
   object dbEditKategorija: TDBEdit
     Left = 539
@@ -246,6 +254,7 @@
     ReadOnly = True
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     TabOrder = 6
 =======
     TabOrder = 11
@@ -253,6 +262,9 @@
 =======
     TabOrder = 12
 >>>>>>> parent of d8b76a5 (first)
+=======
+    TabOrder = 12
+>>>>>>> parent of 1fd5167 (testUI)
   end
   object dbEditKolicina: TDBEdit
     Left = 539
@@ -265,6 +277,7 @@
     ReadOnly = True
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     TabOrder = 7
 =======
     TabOrder = 12
@@ -272,6 +285,9 @@
 =======
     TabOrder = 13
 >>>>>>> parent of d8b76a5 (first)
+=======
+    TabOrder = 13
+>>>>>>> parent of 1fd5167 (testUI)
   end
   object dbEditIsbn: TDBEdit
     Left = 539
@@ -284,6 +300,7 @@
     ReadOnly = True
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     TabOrder = 8
 =======
     TabOrder = 13
@@ -291,6 +308,9 @@
 =======
     TabOrder = 14
 >>>>>>> parent of d8b76a5 (first)
+=======
+    TabOrder = 14
+>>>>>>> parent of 1fd5167 (testUI)
   end
   object dbEditAutor: TDBEdit
     Left = 539
@@ -303,6 +323,7 @@
     ReadOnly = True
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     TabOrder = 9
 =======
     TabOrder = 14
@@ -310,6 +331,9 @@
 =======
     TabOrder = 15
 >>>>>>> parent of d8b76a5 (first)
+=======
+    TabOrder = 15
+>>>>>>> parent of 1fd5167 (testUI)
   end
   object editIme: TEdit
     Left = 85
@@ -319,6 +343,7 @@
     ReadOnly = True
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     TabOrder = 10
 =======
     TabOrder = 15
@@ -326,6 +351,9 @@
 =======
     TabOrder = 16
 >>>>>>> parent of d8b76a5 (first)
+=======
+    TabOrder = 16
+>>>>>>> parent of 1fd5167 (testUI)
     Text = 'editIme'
   end
   object editTelBroj: TEdit
@@ -336,6 +364,7 @@
     ReadOnly = True
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     TabOrder = 11
 =======
     TabOrder = 16
@@ -343,6 +372,9 @@
 =======
     TabOrder = 17
 >>>>>>> parent of d8b76a5 (first)
+=======
+    TabOrder = 17
+>>>>>>> parent of 1fd5167 (testUI)
     Text = 'Edit1'
   end
   object editAdresa: TEdit
@@ -353,6 +385,7 @@
     ReadOnly = True
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     TabOrder = 12
 =======
     TabOrder = 17
@@ -360,6 +393,9 @@
 =======
     TabOrder = 18
 >>>>>>> parent of d8b76a5 (first)
+=======
+    TabOrder = 18
+>>>>>>> parent of 1fd5167 (testUI)
     Text = 'Edit1'
   end
   object editPrezime: TEdit
@@ -370,6 +406,7 @@
     ReadOnly = True
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     TabOrder = 13
 =======
     TabOrder = 18
@@ -377,6 +414,9 @@
 =======
     TabOrder = 19
 >>>>>>> parent of d8b76a5 (first)
+=======
+    TabOrder = 19
+>>>>>>> parent of 1fd5167 (testUI)
     Text = 'Edit1'
   end
   object editClanskiBroj: TEdit
@@ -387,6 +427,7 @@
     ReadOnly = True
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     TabOrder = 14
 =======
     TabOrder = 19
@@ -394,6 +435,9 @@
 =======
     TabOrder = 20
 >>>>>>> parent of d8b76a5 (first)
+=======
+    TabOrder = 20
+>>>>>>> parent of 1fd5167 (testUI)
     Text = 'Edit1'
   end
   object editBrojPosudbi: TEdit
@@ -404,6 +448,7 @@
     ReadOnly = True
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     TabOrder = 15
 =======
     TabOrder = 20
@@ -411,6 +456,9 @@
 =======
     TabOrder = 21
 >>>>>>> parent of d8b76a5 (first)
+=======
+    TabOrder = 21
+>>>>>>> parent of 1fd5167 (testUI)
     Text = 'Edit1'
   end
   object TKnjigePos: TADOTable

@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:__history/Unit3.dfm.~1~
+>>>>>>> parent of 1fd5167 (testUI)
 <<<<<<< HEAD:__history/Unit3.dfm.~1~
 <<<<<<< HEAD:__history/Unit3.dfm.~1~
 object Evidencija: TEvidencija
@@ -22,6 +26,17 @@ object Form1: TForm1
   ClientHeight = 580
   ClientWidth = 666
 >>>>>>> parent of d8b76a5 (first):__history/Unit1.dfm.~10~
+<<<<<<< HEAD
+=======
+========
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 580
+  ClientWidth = 666
+>>>>>>>> parent of 1fd5167 (testUI):__history/Unit1.dfm.~10~
+>>>>>>> parent of 1fd5167 (testUI)
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -30,13 +45,41 @@ object Form1: TForm1
   Font.Style = []
   OldCreateOrder = False
   DesignSize = (
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:__history/Unit3.dfm.~1~
+>>>>>>> parent of 1fd5167 (testUI)
 <<<<<<< HEAD:__history/Unit3.dfm.~1~
 <<<<<<< HEAD:__history/Unit3.dfm.~1~
     663
     476)
+<<<<<<< HEAD
   PixelsPerInch = 96
   TextHeight = 13
   object Label2: TLabel
+=======
+========
+    666
+    580)
+>>>>>>>> parent of 1fd5167 (testUI):__history/Unit1.dfm.~10~
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 32
+    Top = 23
+    Width = 56
+    Height = 19
+    Caption = #268'lanovi:'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+<<<<<<<< HEAD:__history/Unit3.dfm.~1~
+>>>>>>> parent of 1fd5167 (testUI)
     Left = 53
     Top = 171
 =======
@@ -70,6 +113,13 @@ object Form1: TForm1
     Left = 32
     Top = 267
 >>>>>>> parent of d8b76a5 (first):__history/Unit1.dfm.~10~
+<<<<<<< HEAD
+=======
+========
+    Left = 32
+    Top = 267
+>>>>>>>> parent of 1fd5167 (testUI):__history/Unit1.dfm.~10~
+>>>>>>> parent of 1fd5167 (testUI)
     Width = 60
     Height = 19
     Caption = 'Posudbe:'
@@ -80,6 +130,10 @@ object Form1: TForm1
     Font.Style = [fsItalic]
     ParentFont = False
   end
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:__history/Unit3.dfm.~1~
+>>>>>>> parent of 1fd5167 (testUI)
 <<<<<<< HEAD:__history/Unit3.dfm.~1~
   object Label1: TLabel
     Left = 32
@@ -144,6 +198,15 @@ object Form1: TForm1
     Top = 292
     Width = 617
 >>>>>>> parent of d8b76a5 (first):__history/Unit1.dfm.~10~
+<<<<<<< HEAD
+=======
+========
+  object gridPosudbe: TDBGrid
+    Left = 32
+    Top = 292
+    Width = 617
+>>>>>>>> parent of 1fd5167 (testUI):__history/Unit1.dfm.~10~
+>>>>>>> parent of 1fd5167 (testUI)
     Height = 209
     DataSource = DPosudbe
     ReadOnly = True
@@ -195,6 +258,7 @@ object Form1: TForm1
         Visible = True
       end>
   end
+<<<<<<< HEAD
 <<<<<<< HEAD:__history/Unit3.dfm.~1~
   object DBEdit1: TDBEdit
     Left = 32
@@ -205,6 +269,62 @@ object Form1: TForm1
     DataSource = DPosudbe
     TabOrder = 1
   end
+=======
+<<<<<<<< HEAD:__history/Unit3.dfm.~1~
+<<<<<<< HEAD:__history/Unit3.dfm.~1~
+  object DBEdit1: TDBEdit
+========
+  object gridClanovi: TDBGrid
+>>>>>>>> parent of 1fd5167 (testUI):__history/Unit1.dfm.~10~
+    Left = 32
+    Top = 48
+    Width = 617
+    Height = 185
+    DataSource = DClanovi
+    ReadOnly = True
+    TabOrder = 1
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    OnDblClick = gridClanoviDblClick
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'clanskiBroj'
+        Title.Caption = #269'lanski broj'
+        Width = 100
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'ime'
+        Width = 100
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'prezime'
+        Width = 100
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'telefonskiBroj'
+        Title.Caption = 'Telefonski Broj'
+        Width = 100
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'adresa'
+        Width = 150
+        Visible = True
+      end>
+  end
+<<<<<<<< HEAD:__history/Unit3.dfm.~1~
+>>>>>>> parent of 1fd5167 (testUI)
   object DBEdit2: TDBEdit
     Left = 32
     Top = 403
@@ -261,6 +381,11 @@ object Form1: TForm1
         Visible = True
       end>
   end
+<<<<<<< HEAD
+=======
+========
+>>>>>>>> parent of 1fd5167 (testUI):__history/Unit1.dfm.~10~
+>>>>>>> parent of 1fd5167 (testUI)
   object btnNovaPosudba: TButton
     AlignWithMargins = True
     Left = 536
@@ -269,6 +394,10 @@ object Form1: TForm1
     Height = 28
     Anchors = [akBottom]
     Caption = 'Nova Posudba'
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:__history/Unit3.dfm.~1~
+>>>>>>> parent of 1fd5167 (testUI)
 >>>>>>> parent of bef97b7 (Revert "first"):__history/Unit1.dfm.~19~
     TabOrder = 2
   end
@@ -297,15 +426,40 @@ object Form1: TForm1
     Height = 25
     TabOrder = 3
   end
+<<<<<<< HEAD
+=======
+========
+    TabOrder = 2
+  end
+  object editPrezime: TEdit
+    Left = 440
+    Top = 20
+    Width = 128
+    Height = 25
+    TabOrder = 3
+  end
+>>>>>>>> parent of 1fd5167 (testUI):__history/Unit1.dfm.~10~
+>>>>>>> parent of 1fd5167 (testUI)
   object btnTrazi: TButton
     Left = 574
     Top = 20
     Width = 75
     Height = 25
     Caption = 'Tra'#382'i'
+<<<<<<< HEAD
 >>>>>>> parent of bef97b7 (Revert "first"):__history/Unit1.dfm.~19~
     TabOrder = 4
   end
+=======
+<<<<<<<< HEAD:__history/Unit3.dfm.~1~
+>>>>>>> parent of bef97b7 (Revert "first"):__history/Unit1.dfm.~19~
+========
+>>>>>>>> parent of 1fd5167 (testUI):__history/Unit1.dfm.~10~
+    TabOrder = 4
+    OnClick = btnTraziClick
+  end
+<<<<<<<< HEAD:__history/Unit3.dfm.~1~
+>>>>>>> parent of 1fd5167 (testUI)
 <<<<<<< HEAD:__history/Unit3.dfm.~1~
 <<<<<<< HEAD:__history/Unit3.dfm.~1~
   object DBEdit5: TDBEdit
@@ -465,6 +619,11 @@ object Form1: TForm1
   end
 =======
 >>>>>>> parent of d8b76a5 (first):__history/Unit1.dfm.~10~
+<<<<<<< HEAD
+=======
+========
+>>>>>>>> parent of 1fd5167 (testUI):__history/Unit1.dfm.~10~
+>>>>>>> parent of 1fd5167 (testUI)
   object ADOConnection1: TADOConnection
     Connected = True
     ConnectionString = 
@@ -473,6 +632,10 @@ object Form1: TForm1
       '\SQLEXPRESS'
     LoginPrompt = False
     Provider = 'SQLOLEDB.1'
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:__history/Unit3.dfm.~1~
+>>>>>>> parent of 1fd5167 (testUI)
 <<<<<<< HEAD:__history/Unit3.dfm.~1~
     Left = 40
     Top = 195
@@ -495,11 +658,24 @@ object Form1: TForm1
     DataSet = TClanovi
     Left = 216
     Top = 99
+<<<<<<< HEAD
   end
   object TClanovi: TADOTable
     Active = True
     Connection = ADOConnection1
     CursorType = ctStatic
+=======
+========
+    Left = 56
+    Top = 203
+>>>>>>>> parent of 1fd5167 (testUI):__history/Unit1.dfm.~10~
+  end
+  object TKnjige: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+<<<<<<<< HEAD:__history/Unit3.dfm.~1~
+>>>>>>> parent of 1fd5167 (testUI)
 <<<<<<< HEAD:__history/Unit3.dfm.~1~
     Filter = 'prezime LIKE "K%"'
     TableName = 'Clanovi'
@@ -526,10 +702,19 @@ object Form1: TForm1
       Size = 50
     end
 =======
+<<<<<<< HEAD
+=======
+========
+>>>>>>>> parent of 1fd5167 (testUI):__history/Unit1.dfm.~10~
+>>>>>>> parent of 1fd5167 (testUI)
     IndexFieldNames = 'ISBN'
     MasterFields = 'isbnKnjige'
     MasterSource = DPosudbe
     TableName = 'Knjige'
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:__history/Unit3.dfm.~1~
+>>>>>>> parent of 1fd5167 (testUI)
 <<<<<<< HEAD:__history/Unit3.dfm.~1~
     Left = 88
     Top = 187
@@ -538,6 +723,13 @@ object Form1: TForm1
     Left = 104
     Top = 195
 >>>>>>> parent of d8b76a5 (first):__history/Unit1.dfm.~10~
+<<<<<<< HEAD
+=======
+========
+    Left = 104
+    Top = 195
+>>>>>>>> parent of 1fd5167 (testUI):__history/Unit1.dfm.~10~
+>>>>>>> parent of 1fd5167 (testUI)
   end
   object TPosudbe: TADOTable
     Active = True
@@ -547,6 +739,10 @@ object Form1: TForm1
     MasterFields = 'clanskiBroj'
     MasterSource = DClanovi
     TableName = 'Posudbe'
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:__history/Unit3.dfm.~1~
+>>>>>>> parent of 1fd5167 (testUI)
 <<<<<<< HEAD:__history/Unit3.dfm.~1~
 <<<<<<< HEAD:__history/Unit3.dfm.~1~
     Left = 168
@@ -559,6 +755,13 @@ object Form1: TForm1
     Left = 152
     Top = 203
 >>>>>>> parent of d8b76a5 (first):__history/Unit1.dfm.~10~
+<<<<<<< HEAD
+=======
+========
+    Left = 152
+    Top = 203
+>>>>>>>> parent of 1fd5167 (testUI):__history/Unit1.dfm.~10~
+>>>>>>> parent of 1fd5167 (testUI)
     object TPosudbeId: TAutoIncField
       FieldName = 'Id'
       ReadOnly = True
@@ -588,6 +791,10 @@ object Form1: TForm1
       Lookup = True
     end
   end
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:__history/Unit3.dfm.~1~
+>>>>>>> parent of 1fd5167 (testUI)
 <<<<<<< HEAD:__history/Unit3.dfm.~1~
   object DPosudbe: TDataSource
     DataSet = TPosudbe
@@ -610,6 +817,7 @@ object Form1: TForm1
     Top = 155
 >>>>>>> parent of d8b76a5 (first):__history/Unit1.dfm.~10~
   end
+<<<<<<< HEAD
   object DKnjige: TDataSource
     DataSet = TKnjige
     Left = 120
@@ -619,6 +827,25 @@ object Form1: TForm1
     Active = True
     Connection = ADOConnection1
     CursorType = ctStatic
+=======
+========
+>>>>>>>> parent of 1fd5167 (testUI):__history/Unit1.dfm.~10~
+  object DKnjige: TDataSource
+    DataSet = TKnjige
+    Left = 104
+    Top = 155
+  end
+  object DPosudbe: TDataSource
+    DataSet = TPosudbe
+    Left = 152
+    Top = 155
+  end
+  object TClanovi: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+<<<<<<<< HEAD:__history/Unit3.dfm.~1~
+>>>>>>> parent of 1fd5167 (testUI)
 <<<<<<< HEAD:__history/Unit3.dfm.~1~
     IndexFieldNames = 'ISBN'
     MasterFields = 'isbnKnjige'
@@ -672,5 +899,39 @@ object Form1: TForm1
     Left = 200
     Top = 155
 >>>>>>> parent of d8b76a5 (first):__history/Unit1.dfm.~10~
+<<<<<<< HEAD
+=======
+========
+    Filter = 'prezime LIKE "K%"'
+    TableName = 'Clanovi'
+    Left = 200
+    Top = 195
+    object TClanoviclanskiBroj: TWideStringField
+      FieldName = 'clanskiBroj'
+      Size = 50
+    end
+    object TClanoviime: TStringField
+      FieldName = 'ime'
+      Size = 50
+    end
+    object TClanoviprezime: TStringField
+      FieldName = 'prezime'
+      Size = 50
+    end
+    object TClanovitelefonskiBroj: TStringField
+      FieldName = 'telefonskiBroj'
+      Size = 30
+    end
+    object TClanoviadresa: TStringField
+      FieldName = 'adresa'
+      Size = 50
+    end
+  end
+  object DClanovi: TDataSource
+    DataSet = TClanovi
+    Left = 200
+    Top = 155
+>>>>>>>> parent of 1fd5167 (testUI):__history/Unit1.dfm.~10~
+>>>>>>> parent of 1fd5167 (testUI)
   end
 end

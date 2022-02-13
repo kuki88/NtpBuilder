@@ -2,7 +2,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
   Left = 0
   Top = 0
   Caption = 'FormClanoviPosudbe'
-  ClientHeight = 455
+  ClientHeight = 808
   ClientWidth = 734
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -13,7 +13,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
   OldCreateOrder = False
   DesignSize = (
     734
-    455)
+    808)
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
@@ -30,13 +30,76 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     Font.Style = [fsBold]
     ParentFont = False
   end
-  object gridClanovi: TDBGrid
+  object Label2: TLabel
     Left = 8
-    Top = 41
+    Top = 566
+    Width = 60
+    Height = 19
+    Anchors = [akBottom]
+    Caption = 'Posudbe:'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsItalic]
+    ParentFont = False
+    ExplicitTop = 490
+  end
+  object Label9: TLabel
+    Left = 198
+    Top = 443
+    Width = 10
+    Height = 13
+    Caption = 'Id'
+    FocusControl = DBEdit1
+  end
+  object Label10: TLabel
+    Left = 160
+    Top = 488
+    Width = 48
+    Height = 13
+    Caption = 'isbnKnjige'
+    FocusControl = DBEdit2
+  end
+  object Label11: TLabel
+    Left = 137
+    Top = 530
+    Width = 71
+    Height = 13
+    Caption = 'datumPosudbe'
+    FocusControl = DBEdit3
+  end
+  object Label12: TLabel
+    Left = 222
+    Top = 443
+    Width = 73
+    Height = 13
+    Caption = 'datumPovratka'
+    FocusControl = DBEdit4
+  end
+  object Label13: TLabel
+    Left = 222
+    Top = 489
+    Width = 50
+    Height = 13
+    Caption = 'clanskiBroj'
+    FocusControl = DBEdit5
+  end
+  object Label14: TLabel
+    Left = 222
+    Top = 530
+    Width = 58
+    Height = 13
+    Caption = 'Naziv Knjige'
+    FocusControl = DBEdit6
+  end
+  object gridPosudbe: TDBGrid
+    Left = 8
+    Top = 591
     Width = 700
-    Height = 185
-    Anchors = [akTop]
-    DataSource = DClanovi
+    Height = 209
+    Anchors = [akBottom]
+    DataSource = DPosudbe
     ReadOnly = True
     TabOrder = 0
     TitleFont.Charset = DEFAULT_CHARSET
@@ -44,7 +107,62 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
-    OnDblClick = gridClanoviDblClick
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'Id'
+        Width = 40
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'isbnKnjige'
+        Title.Caption = 'ISBN Knjige'
+        Width = 100
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Naziv Knjige'
+        Width = 100
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'datumPosudbe'
+        Title.Caption = 'Datum Posudbe'
+        Width = 120
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'datumPovratka'
+        Title.Caption = 'Datum Povratka'
+        Width = 120
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'clanskiBroj'
+        Title.Caption = #268'lanski Broj'
+        Width = 100
+        Visible = True
+      end>
+  end
+  object gridClanovi: TDBGrid
+    Left = 8
+    Top = 39
+    Width = 700
+    Height = 185
+    Anchors = [akTop]
+    DataSource = DClanovi
+    ReadOnly = True
+    TabOrder = 1
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
     Columns = <
       item
         Expanded = False
@@ -85,7 +203,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     Width = 113
     Height = 28
     Caption = 'Nova Posudba'
-    TabOrder = 1
+    TabOrder = 2
     OnClick = btnNovaPosudbaClick
   end
   object editPrezime: TEdit
@@ -94,7 +212,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     Width = 128
     Height = 21
     Anchors = [akTop]
-    TabOrder = 2
+    TabOrder = 3
   end
   object btnTrazi: TButton
     Left = 633
@@ -103,11 +221,14 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     Height = 25
     Anchors = [akTop]
     Caption = 'Tra'#382'i'
-    TabOrder = 3
+    TabOrder = 4
     OnClick = btnTraziClick
   end
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 1fd5167 (testUI)
   object DBEdit1: TDBEdit
     Left = 8
     Top = 461
@@ -162,13 +283,16 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     DataSource = DPosudbe
     TabOrder = 10
   end
+<<<<<<< HEAD
 >>>>>>> parent of bef97b7 (Revert "first")
+=======
+>>>>>>> parent of 1fd5167 (testUI)
   object GroupBox1: TGroupBox
     Left = 8
     Top = 242
     Width = 425
     Height = 169
-    TabOrder = 4
+    TabOrder = 11
     object Label4: TLabel
       Left = 3
       Top = 20
@@ -270,6 +394,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
 >>>>>>> parent of 47ae5f3 (connecton popravljen)
     Provider = 'SQLOLEDB.1'
 <<<<<<< HEAD
+<<<<<<< HEAD
     Left = 112
     Top = 179
 =======
@@ -284,6 +409,10 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     Left = 40
     Top = 195
 >>>>>>> parent of d8b76a5 (first)
+=======
+    Left = 40
+    Top = 195
+>>>>>>> parent of 1fd5167 (testUI)
   end
   object TKnjige: TADOTable
     Active = True
@@ -293,6 +422,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     MasterFields = 'isbnKnjige'
     MasterSource = DPosudbe
     TableName = 'Knjige'
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     Left = 160
@@ -310,6 +440,10 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     Left = 88
     Top = 187
 >>>>>>> parent of d8b76a5 (first)
+=======
+    Left = 88
+    Top = 187
+>>>>>>> parent of 1fd5167 (testUI)
   end
   object TPosudbe: TADOTable
     Active = True
@@ -319,6 +453,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     MasterFields = 'clanskiBroj'
     MasterSource = DClanovi
     TableName = 'Posudbe'
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     Left = 208
@@ -331,6 +466,10 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     Left = 136
     Top = 195
 >>>>>>> parent of d8b76a5 (first)
+=======
+    Left = 136
+    Top = 195
+>>>>>>> parent of 1fd5167 (testUI)
     object TPosudbeId: TAutoIncField
       FieldName = 'Id'
       ReadOnly = True
@@ -367,6 +506,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
   object DKnjige: TDataSource
     DataSet = TKnjige
 <<<<<<< HEAD
+<<<<<<< HEAD
     Left = 160
     Top = 131
   end
@@ -390,6 +530,15 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     Left = 136
     Top = 147
 >>>>>>> parent of d8b76a5 (first)
+=======
+    Left = 88
+    Top = 147
+  end
+  object DPosudbe: TDataSource
+    DataSet = TPosudbe
+    Left = 136
+    Top = 147
+>>>>>>> parent of 1fd5167 (testUI)
   end
   object TClanovi: TADOTable
     Active = True
@@ -399,12 +548,17 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     TableName = 'Clanovi'
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Left = 256
     Top = 171
 =======
     Left = 184
     Top = 187
 >>>>>>> parent of d8b76a5 (first)
+=======
+    Left = 184
+    Top = 187
+>>>>>>> parent of 1fd5167 (testUI)
     object TClanoviclanskiBroj: TWideStringField
       FieldName = 'clanskiBroj'
       Size = 50
@@ -429,6 +583,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
   end
   object DClanovi: TDataSource
     DataSet = TClanovi
+<<<<<<< HEAD
     Left = 256
     Top = 131
 =======
@@ -447,5 +602,9 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     Left = 184
     Top = 147
 >>>>>>> parent of d8b76a5 (first)
+=======
+    Left = 184
+    Top = 147
+>>>>>>> parent of 1fd5167 (testUI)
   end
 end

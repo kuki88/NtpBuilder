@@ -7,12 +7,16 @@
 #include "Unit2.h"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "Unit3.h"
 
 =======
 >>>>>>> parent of 47ae5f3 (connecton popravljen)
 =======
 >>>>>>> parent of 47ae5f3 (connecton popravljen)
+=======
+#include <string.h>
+>>>>>>> parent of 1fd5167 (testUI)
 // #include "Clanovi.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
@@ -81,16 +85,20 @@ void __fastcall TFormClanoviPosudbe::btnNovaPosudbaClick(TObject *Sender)
 <<<<<<< HEAD
 <<<<<<< HEAD
 
+<<<<<<< HEAD
 			ShowMessage("Uspješna posudba, član " + FormPosudba->editIme->Text + " je posudio knjigu " + FormPosudba->dbEditNaziv->Text);
 =======
 =======
 >>>>>>> parent of 47ae5f3 (connecton popravljen)
 			ShowMessage("Uspješna posudba, član " + FormPosudba->dbEditIme->Text + " je posudio knjigu " + FormPosudba->dbEditNaziv->Text);
 >>>>>>> parent of 47ae5f3 (connecton popravljen)
+=======
+			ShowMessage("Uspješna posudba, član " + FormPosudba->dbEditIme->Text + " je posudio knjigu " + FormPosudba->dbEditNaziv->Text);
+>>>>>>> parent of 1fd5167 (testUI)
 		}
 		else{
-			ShowMessage("Neuspješna posudba, navedena knjiga nije na stanju!");
-		}
+            ShowMessage("Neuspješna posudba, navedena knjiga nije na stanju!");
+        }
 	}
 
 //	std::string clanskiBr(gridClanovi->SelectedRows[0].Items[0].begin(), gridClanovi->SelectedRows[0].Items[0].end());
@@ -98,10 +106,4 @@ void __fastcall TFormClanoviPosudbe::btnNovaPosudbaClick(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
-
-void __fastcall TFormClanoviPosudbe::gridClanoviDblClick(TObject *Sender)
-{
-	Evidencija->ShowModal();
-}
-//---------------------------------------------------------------------------
 
