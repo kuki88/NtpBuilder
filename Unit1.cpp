@@ -5,8 +5,11 @@
 
 #include "Unit1.h"
 #include "Unit2.h"
+<<<<<<< HEAD
 #include "Unit3.h"
 
+=======
+>>>>>>> parent of 47ae5f3 (connecton popravljen)
 // #include "Clanovi.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
@@ -50,7 +53,6 @@ void __fastcall TFormClanoviPosudbe::btnTraziClick(TObject *Sender)
 void __fastcall TFormClanoviPosudbe::btnNovaPosudbaClick(TObject *Sender)
 {
 
-
 	FormPosudba->editAdresa->Text = dbeditAdresa->Text;
 	FormPosudba->editIme->Text = dbEditIme->Text;
 	FormPosudba->editPrezime->Text = dbEditPrezime->Text;
@@ -73,8 +75,12 @@ void __fastcall TFormClanoviPosudbe::btnNovaPosudbaClick(TObject *Sender)
 
 
 
+<<<<<<< HEAD
 
 			ShowMessage("Uspješna posudba, član " + FormPosudba->editIme->Text + " je posudio knjigu " + FormPosudba->dbEditNaziv->Text);
+=======
+			ShowMessage("Uspješna posudba, član " + FormPosudba->dbEditIme->Text + " je posudio knjigu " + FormPosudba->dbEditNaziv->Text);
+>>>>>>> parent of 47ae5f3 (connecton popravljen)
 		}
 		else{
 			ShowMessage("Neuspješna posudba, navedena knjiga nije na stanju!");

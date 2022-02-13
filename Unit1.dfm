@@ -202,8 +202,8 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     Connected = True
     ConnectionString = 
       'Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security In' +
-      'fo=False;Initial Catalog=KnjiznicaManagement;Data Source=DESKTOP' +
-      '-N5RRRS5\SQLEXPRESS'
+      'fo=False;Initial Catalog=KnjiznicaManagement;Data Source=KUKICRO' +
+      '\SQLEXPRESS'
     LoginPrompt = False
     Provider = 'SQLOLEDB.1'
     Left = 112
