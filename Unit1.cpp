@@ -48,6 +48,9 @@ void __fastcall TFormClanoviPosudbe::btnTraziClick(TObject *Sender)
 void __fastcall TFormClanoviPosudbe::btnNovaPosudbaClick(TObject *Sender)
 {
 
+	TDataSource* Src = new TDataSource(this);
+
+
 	FormPosudba->editAdresa->Text = dbeditAdresa->Text;
 	FormPosudba->editIme->Text = dbEditIme->Text;
 	FormPosudba->editPrezime->Text = dbEditPrezime->Text;
@@ -70,17 +73,15 @@ void __fastcall TFormClanoviPosudbe::btnNovaPosudbaClick(TObject *Sender)
 
 
 
-			ShowMessage("Uspješna posudba, član " + FormPosudba->dbEditIme->Text + " je posudio knjigu " + FormPosudba->editNaziv->Text);
+			ShowMessage("Uspješna posudba, član " + FormPosudba->editIme->Text + " je posudio knjigu " + FormPosudba->dbEditNaziv->Text);
 		}
 		else{
             ShowMessage("Neuspješna posudba, navedena knjiga nije na stanju!");
         }
 	}
-
-//	std::string clanskiBr(gridClanovi->SelectedRows[0].Items[0].begin(), gridClanovi->SelectedRows[0].Items[0].end());
-//	Label3->Caption = clanskiBr.c_str();
 }
 //---------------------------------------------------------------------------
+
 
 
 

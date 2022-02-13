@@ -1,0 +1,53 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Login.h"
+#include "Main.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TFormLogin *FormLogin;
+//---------------------------------------------------------------------------
+__fastcall TFormLogin::TFormLogin(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TFormLogin::btnLoginClick(TObject *Sender)
+{
+	UnicodeString query = "select * from admin where korisnickoIme = '" + editKorisnicko->Text +
+					 "' AND lozinka = '" + editLozinka->Text + "'";
+	AnsiString ansiQuery = query;
+
+	ADOQuery1->ConnectionString = "Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=KnjiznicaManagement;Data Source=KUKICRO\\SQLEXPRESS;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=KUKICRO;Use Encryption for Data=False;Tag with column collation when possible=False";
+	ADOQuery1->SQL->Add(ansiQuery);
+
+	ADOQuery1->Prepared = true;
+
+	try
+	{
+		ADOQuery1->Active = true;
+	}
+	catch (EADOError& e)
+	{
+		MessageDlg("Error while connecting", mtError,
+					  TMsgDlgButtons() << mbOK, 0);
+		return;
+	}
+
+	TDataSource* Src = new TDataSource(this);
+	Src->DataSet = ADOQuery1;
+	Src->Enabled = true;
+
+	if(Src->DataSet->RecordCount < 1){
+		labelPrijava->Visible = true;
+		return;
+	}
+
+	FormMain->labelUlogiran->Caption = Src->DataSet->FieldByName("korisnickoIme")->AsString;
+
+}
+//---------------------------------------------------------------------------
+

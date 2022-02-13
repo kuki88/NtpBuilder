@@ -3,7 +3,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
   Top = 0
   Caption = 'FormClanoviPosudbe'
   ClientHeight = 808
-  ClientWidth = 735
+  ClientWidth = 731
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -12,7 +12,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
   Font.Style = []
   OldCreateOrder = False
   DesignSize = (
-    735
+    731
     808)
   PixelsPerInch = 96
   TextHeight = 13
@@ -93,8 +93,15 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     Caption = 'Naziv Knjige'
     FocusControl = DBEdit6
   end
+  object Label3: TLabel
+    Left = 568
+    Top = 408
+    Width = 31
+    Height = 13
+    Caption = 'Label3'
+  end
   object gridPosudbe: TDBGrid
-    Left = 8
+    Left = 6
     Top = 591
     Width = 700
     Height = 209
@@ -150,7 +157,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
       end>
   end
   object gridClanovi: TDBGrid
-    Left = 8
+    Left = 6
     Top = 39
     Width = 700
     Height = 185
@@ -207,7 +214,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     OnClick = btnNovaPosudbaClick
   end
   object editPrezime: TEdit
-    Left = 500
+    Left = 497
     Top = 12
     Width = 128
     Height = 21
@@ -215,7 +222,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     TabOrder = 3
   end
   object btnTrazi: TButton
-    Left = 634
+    Left = 630
     Top = 10
     Width = 75
     Height = 25
