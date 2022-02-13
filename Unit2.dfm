@@ -2,7 +2,7 @@
   Left = 0
   Top = 0
   Caption = 'Posudba'
-  ClientHeight = 679
+  ClientHeight = 468
   ClientWidth = 751
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -14,7 +14,7 @@
   OnCreate = FormCreate
   DesignSize = (
     751
-    679)
+    468)
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
@@ -111,17 +111,18 @@
   end
   object Odustani: TButton
     Left = 8
-    Top = 610
+    Top = 399
     Width = 365
     Height = 61
     Anchors = [akLeft, akBottom]
     Caption = 'Odustani'
     ModalResult = 2
     TabOrder = 0
+    ExplicitTop = 610
   end
   object Posudi: TButton
     Left = 378
-    Top = 610
+    Top = 399
     Width = 365
     Height = 61
     Anchors = [akRight, akBottom]
@@ -129,6 +130,7 @@
     ModalResult = 1
     TabOrder = 1
     OnClick = PosudiClick
+    ExplicitTop = 610
   end
   object DBGrid1: TDBGrid
     Left = 8
@@ -146,8 +148,8 @@
     TitleFont.Style = []
   end
   object datePocetna: TDateTimePicker
-    Left = 85
-    Top = 528
+    Left = 87
+    Top = 320
     Width = 144
     Height = 21
     Date = 44603.000000000000000000
@@ -155,71 +157,14 @@
     TabOrder = 3
   end
   object datePovratak: TDateTimePicker
-    Left = 236
-    Top = 528
+    Left = 238
+    Top = 320
     Width = 147
     Height = 21
     Date = 44603.000000000000000000
     Time = 0.753646874996775300
     TabOrder = 4
   end
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> parent of 1fd5167 (testUI)
-  object dbEditIme: TDBEdit
-    Left = 85
-    Top = 402
-    Width = 145
-    Height = 21
-    ReadOnly = True
-    TabOrder = 5
-  end
-  object dbEditPrezime: TDBEdit
-    Left = 236
-    Top = 402
-    Width = 147
-    Height = 21
-    ReadOnly = True
-    TabOrder = 6
-  end
-  object dbEditTelBroj: TDBEdit
-    Left = 85
-    Top = 445
-    Width = 145
-    Height = 21
-    ReadOnly = True
-    TabOrder = 7
-  end
-  object dbEditClanskiBroj: TDBEdit
-    Left = 236
-    Top = 445
-    Width = 147
-    Height = 21
-    ReadOnly = True
-    TabOrder = 8
-  end
-  object dbEditAdresa: TDBEdit
-    Left = 85
-    Top = 488
-    Width = 145
-    Height = 21
-    ReadOnly = True
-    TabOrder = 9
-  end
-  object dbEditBrojPosudbi: TDBEdit
-    Left = 236
-    Top = 488
-    Width = 147
-    Height = 21
-    ReadOnly = True
-    TabOrder = 10
-  end
-<<<<<<< HEAD
->>>>>>> parent of bef97b7 (Revert "first")
-=======
->>>>>>> parent of 1fd5167 (testUI)
   object dbEditNaziv: TDBEdit
     Left = 539
     Top = 200
@@ -229,23 +174,7 @@
     DataField = 'NazivKnjige'
     DataSource = DKnjigePos
     ReadOnly = True
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     TabOrder = 5
-=======
-    TabOrder = 10
->>>>>>> parent of bef97b7 (Revert "first")
-=======
-    TabOrder = 11
->>>>>>> parent of d8b76a5 (first)
-=======
-    TabOrder = 11
->>>>>>> parent of 1fd5167 (testUI)
-=======
-    TabOrder = 11
->>>>>>> parent of d8b76a5 (first)
   end
   object dbEditKategorija: TDBEdit
     Left = 539
@@ -256,23 +185,7 @@
     DataField = 'Kategorija'
     DataSource = DKnjigePos
     ReadOnly = True
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     TabOrder = 6
-=======
-    TabOrder = 11
->>>>>>> parent of bef97b7 (Revert "first")
-=======
-    TabOrder = 12
->>>>>>> parent of d8b76a5 (first)
-=======
-    TabOrder = 12
->>>>>>> parent of 1fd5167 (testUI)
-=======
-    TabOrder = 12
->>>>>>> parent of d8b76a5 (first)
   end
   object dbEditKolicina: TDBEdit
     Left = 539
@@ -283,23 +196,7 @@
     DataField = 'Koli'#269'ina'
     DataSource = DKnjigePos
     ReadOnly = True
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     TabOrder = 7
-=======
-    TabOrder = 12
->>>>>>> parent of bef97b7 (Revert "first")
-=======
-    TabOrder = 13
->>>>>>> parent of d8b76a5 (first)
-=======
-    TabOrder = 13
->>>>>>> parent of 1fd5167 (testUI)
-=======
-    TabOrder = 13
->>>>>>> parent of d8b76a5 (first)
   end
   object dbEditIsbn: TDBEdit
     Left = 539
@@ -310,23 +207,7 @@
     DataField = 'ISBN'
     DataSource = DKnjigePos
     ReadOnly = True
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     TabOrder = 8
-=======
-    TabOrder = 13
->>>>>>> parent of bef97b7 (Revert "first")
-=======
-    TabOrder = 14
->>>>>>> parent of d8b76a5 (first)
-=======
-    TabOrder = 14
->>>>>>> parent of 1fd5167 (testUI)
-=======
-    TabOrder = 14
->>>>>>> parent of d8b76a5 (first)
   end
   object dbEditAutor: TDBEdit
     Left = 539
@@ -337,23 +218,7 @@
     DataField = 'Autor'
     DataSource = DKnjigePos
     ReadOnly = True
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     TabOrder = 9
-=======
-    TabOrder = 14
->>>>>>> parent of bef97b7 (Revert "first")
-=======
-    TabOrder = 15
->>>>>>> parent of d8b76a5 (first)
-=======
-    TabOrder = 15
->>>>>>> parent of 1fd5167 (testUI)
-=======
-    TabOrder = 15
->>>>>>> parent of d8b76a5 (first)
   end
   object editIme: TEdit
     Left = 85
@@ -361,23 +226,7 @@
     Width = 147
     Height = 21
     ReadOnly = True
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     TabOrder = 10
-=======
-    TabOrder = 15
->>>>>>> parent of bef97b7 (Revert "first")
-=======
-    TabOrder = 16
->>>>>>> parent of d8b76a5 (first)
-=======
-    TabOrder = 16
->>>>>>> parent of 1fd5167 (testUI)
-=======
-    TabOrder = 16
->>>>>>> parent of d8b76a5 (first)
     Text = 'editIme'
   end
   object editTelBroj: TEdit
@@ -386,23 +235,7 @@
     Width = 147
     Height = 21
     ReadOnly = True
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     TabOrder = 11
-=======
-    TabOrder = 16
->>>>>>> parent of bef97b7 (Revert "first")
-=======
-    TabOrder = 17
->>>>>>> parent of d8b76a5 (first)
-=======
-    TabOrder = 17
->>>>>>> parent of 1fd5167 (testUI)
-=======
-    TabOrder = 17
->>>>>>> parent of d8b76a5 (first)
     Text = 'Edit1'
   end
   object editAdresa: TEdit
@@ -411,23 +244,7 @@
     Width = 147
     Height = 21
     ReadOnly = True
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     TabOrder = 12
-=======
-    TabOrder = 17
->>>>>>> parent of bef97b7 (Revert "first")
-=======
-    TabOrder = 18
->>>>>>> parent of d8b76a5 (first)
-=======
-    TabOrder = 18
->>>>>>> parent of 1fd5167 (testUI)
-=======
-    TabOrder = 18
->>>>>>> parent of d8b76a5 (first)
     Text = 'Edit1'
   end
   object editPrezime: TEdit
@@ -436,23 +253,7 @@
     Width = 147
     Height = 21
     ReadOnly = True
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     TabOrder = 13
-=======
-    TabOrder = 18
->>>>>>> parent of bef97b7 (Revert "first")
-=======
-    TabOrder = 19
->>>>>>> parent of d8b76a5 (first)
-=======
-    TabOrder = 19
->>>>>>> parent of 1fd5167 (testUI)
-=======
-    TabOrder = 19
->>>>>>> parent of d8b76a5 (first)
     Text = 'Edit1'
   end
   object editClanskiBroj: TEdit
@@ -461,23 +262,7 @@
     Width = 147
     Height = 21
     ReadOnly = True
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     TabOrder = 14
-=======
-    TabOrder = 19
->>>>>>> parent of bef97b7 (Revert "first")
-=======
-    TabOrder = 20
->>>>>>> parent of d8b76a5 (first)
-=======
-    TabOrder = 20
->>>>>>> parent of 1fd5167 (testUI)
-=======
-    TabOrder = 20
->>>>>>> parent of d8b76a5 (first)
     Text = 'Edit1'
   end
   object editBrojPosudbi: TEdit
@@ -486,27 +271,10 @@
     Width = 147
     Height = 21
     ReadOnly = True
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     TabOrder = 15
-=======
-    TabOrder = 20
->>>>>>> parent of bef97b7 (Revert "first")
-=======
-    TabOrder = 21
->>>>>>> parent of d8b76a5 (first)
-=======
-    TabOrder = 21
->>>>>>> parent of 1fd5167 (testUI)
-=======
-    TabOrder = 21
->>>>>>> parent of d8b76a5 (first)
     Text = 'Edit1'
   end
   object TKnjigePos: TADOTable
-    Active = True
     Connection = ADOConnection1
     CursorType = ctStatic
     TableName = 'Knjige'
@@ -538,7 +306,6 @@
     Top = 16
   end
   object TPosudba: TADOTable
-    Active = True
     Connection = ADOConnection1
     CursorType = ctStatic
     TableName = 'Posudbe'
@@ -551,11 +318,12 @@
     Top = 56
   end
   object ADOConnection1: TADOConnection
-    Connected = True
     ConnectionString = 
       'Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security In' +
       'fo=False;Initial Catalog=KnjiznicaManagement;Data Source=KUKICRO' +
-      '\SQLEXPRESS'
+      '\SQLEXPRESS;Use Procedure for Prepare=1;Auto Translate=True;Pack' +
+      'et Size=4096;Workstation ID=KUKICRO;Use Encryption for Data=Fals' +
+      'e;Tag with column collation when possible=False'
     Provider = 'SQLOLEDB.1'
     Left = 416
     Top = 40

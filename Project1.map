@@ -1,36 +1,6 @@
 
  Start Length Name Class
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
- 0001:00401000 000008F54H _TEXT                  CODE
- 0002:0040A000 000000FF0H _DATA                  DATA
- 0003:0040AFF0 000000288H _BSS                   BSS
-=======
- 0001:00401000 0000089DCH _TEXT                  CODE
- 0002:0040A000 000000D08H _DATA                  DATA
- 0003:0040AD08 00000026CH _BSS                   BSS
->>>>>>> parent of 47ae5f3 (connecton popravljen)
-=======
- 0001:00401000 0000089DCH _TEXT                  CODE
- 0002:0040A000 000000D08H _DATA                  DATA
- 0003:0040AD08 00000026CH _BSS                   BSS
->>>>>>> parent of 47ae5f3 (connecton popravljen)
-=======
- 0001:00401000 0000088D4H _TEXT                  CODE
- 0002:0040A000 000000E7CH _DATA                  DATA
- 0003:0040AE7C 00000026CH _BSS                   BSS
->>>>>>> parent of 1fd5167 (testUI)
-=======
- 0001:00401000 0000089DCH _TEXT                  CODE
- 0002:0040A000 000000D08H _DATA                  DATA
- 0003:0040AD08 00000026CH _BSS                   BSS
->>>>>>> parent of 47ae5f3 (connecton popravljen)
-=======
- 0001:00401000 0000089DCH _TEXT                  CODE
- 0002:0040A000 000000D08H _DATA                  DATA
- 0003:0040AD08 00000026CH _BSS                   BSS
->>>>>>> parent of 47ae5f3 (connecton popravljen)
+ 0001:00401000 000008880H _TEXT                  CODE
+ 0002:0040A000 000000C18H _DATA                  DATA
+ 0003:0040AC18 000000314H _BSS                   BSS
  0004:00000000 000000000H _TLS                   TLS

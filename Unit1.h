@@ -17,9 +17,6 @@
 class TFormClanoviPosudbe : public TForm
 {
 __published:	// IDE-managed Components
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 	TADOConnection *ADOConnection1;
 	TADOTable *TKnjige;
 	TADOTable *TPosudbe;
@@ -36,52 +33,11 @@ __published:	// IDE-managed Components
 	TDateTimeField *TPosudbedatumPosudbe;
 	TDateTimeField *TPosudbedatumPovratka;
 	TWideStringField *TPosudbeclanskiBroj;
-	TStringField *TPosudbeNazivKnjige;
 	TWideStringField *TClanoviclanskiBroj;
 	TStringField *TClanoviime;
 	TStringField *TClanoviprezime;
 	TStringField *TClanovitelefonskiBroj;
 	TStringField *TClanoviadresa;
-=======
-=======
-	TADOConnection *ADOConnection1;
-	TADOTable *TKnjige;
-	TADOTable *TPosudbe;
->>>>>>> parent of d8b76a5 (first)
-=======
-	TADOConnection *ADOConnection1;
-	TADOTable *TKnjige;
-	TADOTable *TPosudbe;
->>>>>>> parent of d8b76a5 (first)
-	TDBGrid *gridPosudbe;
-	TDataSource *DKnjige;
-	TDataSource *DPosudbe;
-	TLabel *Label1;
-	TDBGrid *gridClanovi;
-	TLabel *Label2;
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of bef97b7 (Revert "first")
-=======
-=======
->>>>>>> parent of d8b76a5 (first)
-	TADOTable *TClanovi;
-	TDataSource *DClanovi;
-	TAutoIncField *TPosudbeId;
-	TWideStringField *TPosudbeisbnKnjige;
-	TDateTimeField *TPosudbedatumPosudbe;
-	TDateTimeField *TPosudbedatumPovratka;
-	TWideStringField *TPosudbeclanskiBroj;
-	TStringField *TPosudbeNazivKnjige;
-	TWideStringField *TClanoviclanskiBroj;
-	TStringField *TClanoviime;
-	TStringField *TClanoviprezime;
-	TStringField *TClanovitelefonskiBroj;
-	TStringField *TClanoviadresa;
-<<<<<<< HEAD
->>>>>>> parent of d8b76a5 (first)
-=======
->>>>>>> parent of d8b76a5 (first)
 	TButton *btnNovaPosudba;
 	TEdit *editPrezime;
 	TButton *btnTrazi;
@@ -108,6 +64,8 @@ __published:	// IDE-managed Components
 	TDBEdit *dbEditPrezime;
 	TDBEdit *dbEditTelBroj;
 	TDBEdit *dbeditAdresa;
+	TStringField *TPosudbeNazivKnjige;
+	TDBEdit *dbTest;
 	void __fastcall btnTraziClick(TObject *Sender);
 	void __fastcall btnNovaPosudbaClick(TObject *Sender);
 private:	// User declarations
