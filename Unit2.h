@@ -31,6 +31,11 @@ __published:	// IDE-managed Components
 	TDateTimePicker *datePocetna;
 	TDateTimePicker *datePovratak;
 	TLabel *Label6;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of d8b76a5 (first)
 	TADOTable *TPosudba;
 	TDataSource *DPosudba;
 	TADOConnection *ADOConnection1;
@@ -45,6 +50,30 @@ __published:	// IDE-managed Components
 	TIntegerField *TKnjigePosKoličina;
 	TWideStringField *TKnjigePosISBN;
 	TWideStringField *TKnjigePosAutor;
+<<<<<<< HEAD
+=======
+=======
+	TADOTable *TPosudba;
+	TDataSource *DPosudba;
+	TADOConnection *ADOConnection1;
+>>>>>>> parent of d8b76a5 (first)
+	TDBEdit *dbEditIme;
+	TDBEdit *dbEditPrezime;
+	TDBEdit *dbEditTelBroj;
+	TDBEdit *dbEditClanskiBroj;
+	TDBEdit *dbEditAdresa;
+	TDBEdit *dbEditBrojPosudbi;
+<<<<<<< HEAD
+>>>>>>> parent of bef97b7 (Revert "first")
+=======
+	TWideStringField *TKnjigePosNazivKnjige;
+	TWideStringField *TKnjigePosKategorija;
+	TIntegerField *TKnjigePosKoličina;
+	TWideStringField *TKnjigePosISBN;
+	TWideStringField *TKnjigePosAutor;
+>>>>>>> parent of d8b76a5 (first)
+=======
+>>>>>>> parent of d8b76a5 (first)
 	TLabel *Label7;
 	TDBEdit *dbEditNaziv;
 	TLabel *Label8;

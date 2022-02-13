@@ -163,6 +163,11 @@
     Time = 0.753646874996775300
     TabOrder = 4
   end
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> parent of 1fd5167 (testUI)
   object dbEditIme: TDBEdit
     Left = 85
     Top = 402
@@ -211,6 +216,10 @@
     ReadOnly = True
     TabOrder = 10
   end
+<<<<<<< HEAD
+>>>>>>> parent of bef97b7 (Revert "first")
+=======
+>>>>>>> parent of 1fd5167 (testUI)
   object dbEditNaziv: TDBEdit
     Left = 539
     Top = 200
@@ -220,7 +229,23 @@
     DataField = 'NazivKnjige'
     DataSource = DKnjigePos
     ReadOnly = True
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    TabOrder = 5
+=======
+    TabOrder = 10
+>>>>>>> parent of bef97b7 (Revert "first")
+=======
     TabOrder = 11
+>>>>>>> parent of d8b76a5 (first)
+=======
+    TabOrder = 11
+>>>>>>> parent of 1fd5167 (testUI)
+=======
+    TabOrder = 11
+>>>>>>> parent of d8b76a5 (first)
   end
   object dbEditKategorija: TDBEdit
     Left = 539
@@ -231,7 +256,23 @@
     DataField = 'Kategorija'
     DataSource = DKnjigePos
     ReadOnly = True
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    TabOrder = 6
+=======
+    TabOrder = 11
+>>>>>>> parent of bef97b7 (Revert "first")
+=======
     TabOrder = 12
+>>>>>>> parent of d8b76a5 (first)
+=======
+    TabOrder = 12
+>>>>>>> parent of 1fd5167 (testUI)
+=======
+    TabOrder = 12
+>>>>>>> parent of d8b76a5 (first)
   end
   object dbEditKolicina: TDBEdit
     Left = 539
@@ -242,7 +283,23 @@
     DataField = 'Koli'#269'ina'
     DataSource = DKnjigePos
     ReadOnly = True
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    TabOrder = 7
+=======
+    TabOrder = 12
+>>>>>>> parent of bef97b7 (Revert "first")
+=======
     TabOrder = 13
+>>>>>>> parent of d8b76a5 (first)
+=======
+    TabOrder = 13
+>>>>>>> parent of 1fd5167 (testUI)
+=======
+    TabOrder = 13
+>>>>>>> parent of d8b76a5 (first)
   end
   object dbEditIsbn: TDBEdit
     Left = 539
@@ -253,7 +310,23 @@
     DataField = 'ISBN'
     DataSource = DKnjigePos
     ReadOnly = True
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    TabOrder = 8
+=======
+    TabOrder = 13
+>>>>>>> parent of bef97b7 (Revert "first")
+=======
     TabOrder = 14
+>>>>>>> parent of d8b76a5 (first)
+=======
+    TabOrder = 14
+>>>>>>> parent of 1fd5167 (testUI)
+=======
+    TabOrder = 14
+>>>>>>> parent of d8b76a5 (first)
   end
   object dbEditAutor: TDBEdit
     Left = 539
@@ -264,7 +337,23 @@
     DataField = 'Autor'
     DataSource = DKnjigePos
     ReadOnly = True
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    TabOrder = 9
+=======
+    TabOrder = 14
+>>>>>>> parent of bef97b7 (Revert "first")
+=======
     TabOrder = 15
+>>>>>>> parent of d8b76a5 (first)
+=======
+    TabOrder = 15
+>>>>>>> parent of 1fd5167 (testUI)
+=======
+    TabOrder = 15
+>>>>>>> parent of d8b76a5 (first)
   end
   object editIme: TEdit
     Left = 85
@@ -272,7 +361,23 @@
     Width = 147
     Height = 21
     ReadOnly = True
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    TabOrder = 10
+=======
+    TabOrder = 15
+>>>>>>> parent of bef97b7 (Revert "first")
+=======
     TabOrder = 16
+>>>>>>> parent of d8b76a5 (first)
+=======
+    TabOrder = 16
+>>>>>>> parent of 1fd5167 (testUI)
+=======
+    TabOrder = 16
+>>>>>>> parent of d8b76a5 (first)
     Text = 'editIme'
   end
   object editTelBroj: TEdit
@@ -281,7 +386,23 @@
     Width = 147
     Height = 21
     ReadOnly = True
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    TabOrder = 11
+=======
+    TabOrder = 16
+>>>>>>> parent of bef97b7 (Revert "first")
+=======
     TabOrder = 17
+>>>>>>> parent of d8b76a5 (first)
+=======
+    TabOrder = 17
+>>>>>>> parent of 1fd5167 (testUI)
+=======
+    TabOrder = 17
+>>>>>>> parent of d8b76a5 (first)
     Text = 'Edit1'
   end
   object editAdresa: TEdit
@@ -290,7 +411,23 @@
     Width = 147
     Height = 21
     ReadOnly = True
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    TabOrder = 12
+=======
+    TabOrder = 17
+>>>>>>> parent of bef97b7 (Revert "first")
+=======
     TabOrder = 18
+>>>>>>> parent of d8b76a5 (first)
+=======
+    TabOrder = 18
+>>>>>>> parent of 1fd5167 (testUI)
+=======
+    TabOrder = 18
+>>>>>>> parent of d8b76a5 (first)
     Text = 'Edit1'
   end
   object editPrezime: TEdit
@@ -299,7 +436,23 @@
     Width = 147
     Height = 21
     ReadOnly = True
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    TabOrder = 13
+=======
+    TabOrder = 18
+>>>>>>> parent of bef97b7 (Revert "first")
+=======
     TabOrder = 19
+>>>>>>> parent of d8b76a5 (first)
+=======
+    TabOrder = 19
+>>>>>>> parent of 1fd5167 (testUI)
+=======
+    TabOrder = 19
+>>>>>>> parent of d8b76a5 (first)
     Text = 'Edit1'
   end
   object editClanskiBroj: TEdit
@@ -308,7 +461,23 @@
     Width = 147
     Height = 21
     ReadOnly = True
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    TabOrder = 14
+=======
+    TabOrder = 19
+>>>>>>> parent of bef97b7 (Revert "first")
+=======
     TabOrder = 20
+>>>>>>> parent of d8b76a5 (first)
+=======
+    TabOrder = 20
+>>>>>>> parent of 1fd5167 (testUI)
+=======
+    TabOrder = 20
+>>>>>>> parent of d8b76a5 (first)
     Text = 'Edit1'
   end
   object editBrojPosudbi: TEdit
@@ -317,7 +486,23 @@
     Width = 147
     Height = 21
     ReadOnly = True
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    TabOrder = 15
+=======
+    TabOrder = 20
+>>>>>>> parent of bef97b7 (Revert "first")
+=======
     TabOrder = 21
+>>>>>>> parent of d8b76a5 (first)
+=======
+    TabOrder = 21
+>>>>>>> parent of 1fd5167 (testUI)
+=======
+    TabOrder = 21
+>>>>>>> parent of d8b76a5 (first)
     Text = 'Edit1'
   end
   object TKnjigePos: TADOTable
