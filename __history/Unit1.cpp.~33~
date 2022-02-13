@@ -48,6 +48,7 @@ void __fastcall TFormClanoviPosudbe::btnTraziClick(TObject *Sender)
 
 void __fastcall TFormClanoviPosudbe::btnNovaPosudbaClick(TObject *Sender)
 {
+<<<<<<< HEAD:__history/Unit1.cpp.~33~
 
 
 	FormPosudba->editAdresa->Text = dbeditAdresa->Text;
@@ -56,28 +57,27 @@ void __fastcall TFormClanoviPosudbe::btnNovaPosudbaClick(TObject *Sender)
 	FormPosudba->editTelBroj->Text = dbEditTelBroj->Text;
 	FormPosudba->editClanskiBroj->Text = dbEditClanskiBroj->Text;
 
+=======
+>>>>>>> parent of d8b76a5 (first):__history/Unit1.cpp.~22~
 	if(FormPosudba->ShowModal() == mrOk)
 	{
-
-		if((FormPosudba->dbEditKolicina->Text).ToInt() > 0)
-		{
-
-			TPosudbe->Insert();
-			TPosudbe->FieldByName("isbnKnjige")->AsString = FormPosudba->dbEditIsbn->Text;
-			TPosudbe->FieldByName("datumPosudbe")->AsDateTime = FormPosudba->datePocetna->Date;
-			TPosudbe->FieldByName("datumPovratka")->AsDateTime = FormPosudba->datePovratak->Date;
-			TPosudbe->FieldByName("clanskiBroj")->AsString = FormPosudba->editClanskiBroj->Text;
-			TPosudbe->Post();
+		if((FormPosudba->dbEditKolicina.Text).ToInt() > 0)
+		TPosudbe->Insert();
+		TPosudbe->FieldByName("isbnKnjige")->AsString = FormPosudba->dbEditIsbn->Text;
+		TPosudbe->FieldByName("datumPosudbe")->AsDateTime = FormPosudba->datePocetna->Date;
+		TPosudbe->FieldByName("datumPovratka")->AsDateTime = FormPosudba->datePovratak->Date;
+		TPosudbe->FieldByName("clanskiBroj")->AsString = FormPosudba->->Text;
 
 
-
-
+<<<<<<< HEAD:__history/Unit1.cpp.~33~
 
 			ShowMessage("Uspješna posudba, član " + FormPosudba->dbEditIme->Text + " je posudio knjigu " + FormPosudba->dbEditNaziv->Text);
 		}
 		else{
             ShowMessage("Neuspješna posudba, navedena knjiga nije na stanju!");
         }
+=======
+>>>>>>> parent of d8b76a5 (first):__history/Unit1.cpp.~22~
 	}
 
 //	std::string clanskiBr(gridClanovi->SelectedRows[0].Items[0].begin(), gridClanovi->SelectedRows[0].Items[0].end());

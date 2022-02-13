@@ -5,6 +5,10 @@
 
 #include "Unit1.h"
 #include "Unit2.h"
+<<<<<<< HEAD
+=======
+#include <string.h>
+>>>>>>> parent of d8b76a5 (first)
 // #include "Clanovi.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
@@ -47,6 +51,20 @@ void __fastcall TFormClanoviPosudbe::btnTraziClick(TObject *Sender)
 
 void __fastcall TFormClanoviPosudbe::btnNovaPosudbaClick(TObject *Sender)
 {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:__history/Unit1.cpp.~33~
+
+
+	FormPosudba->editAdresa->Text = dbeditAdresa->Text;
+	FormPosudba->editIme->Text = dbEditIme->Text;
+	FormPosudba->editPrezime->Text = dbEditPrezime->Text;
+	FormPosudba->editTelBroj->Text = dbEditTelBroj->Text;
+	FormPosudba->editClanskiBroj->Text = dbEditClanskiBroj->Text;
+
+=======
+>>>>>>> parent of d8b76a5 (first):__history/Unit1.cpp.~22~
+>>>>>>> parent of d8b76a5 (first)
 	if(FormPosudba->ShowModal() == mrOk)
 	{
 		if((FormPosudba->dbEditKolicina.Text).ToInt() > 0)
@@ -57,6 +75,18 @@ void __fastcall TFormClanoviPosudbe::btnNovaPosudbaClick(TObject *Sender)
 		TPosudbe->FieldByName("clanskiBroj")->AsString = FormPosudba->->Text;
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:__history/Unit1.cpp.~33~
+
+			ShowMessage("Uspješna posudba, član " + FormPosudba->dbEditIme->Text + " je posudio knjigu " + FormPosudba->dbEditNaziv->Text);
+		}
+		else{
+            ShowMessage("Neuspješna posudba, navedena knjiga nije na stanju!");
+        }
+=======
+>>>>>>> parent of d8b76a5 (first):__history/Unit1.cpp.~22~
+>>>>>>> parent of d8b76a5 (first)
 	}
 
 //	std::string clanskiBr(gridClanovi->SelectedRows[0].Items[0].begin(), gridClanovi->SelectedRows[0].Items[0].end());

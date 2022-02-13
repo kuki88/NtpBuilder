@@ -18,8 +18,11 @@
 class TFormPosudba : public TForm
 {
 __published:	// IDE-managed Components
+	TADOTable *TKnjigePos;
+	TDataSource *DKnjigePos;
 	TButton *Odustani;
 	TButton *Posudi;
+	TDBGrid *DBGrid1;
 	TLabel *Label1;
 	TLabel *Label2;
 	TLabel *Label3;
@@ -28,6 +31,7 @@ __published:	// IDE-managed Components
 	TDateTimePicker *datePocetna;
 	TDateTimePicker *datePovratak;
 	TLabel *Label6;
+<<<<<<< HEAD
 <<<<<<< HEAD
 	TADOTable *TPosudba;
 	TDataSource *DPosudba;
@@ -38,13 +42,26 @@ __published:	// IDE-managed Components
 	TWideStringField *TKnjigePosISBN;
 	TWideStringField *TKnjigePosAutor;
 =======
+=======
+	TADOTable *TPosudba;
+	TDataSource *DPosudba;
+	TADOConnection *ADOConnection1;
+>>>>>>> parent of d8b76a5 (first)
 	TDBEdit *dbEditIme;
 	TDBEdit *dbEditPrezime;
 	TDBEdit *dbEditTelBroj;
 	TDBEdit *dbEditClanskiBroj;
 	TDBEdit *dbEditAdresa;
 	TDBEdit *dbEditBrojPosudbi;
+<<<<<<< HEAD
 >>>>>>> parent of bef97b7 (Revert "first")
+=======
+	TWideStringField *TKnjigePosNazivKnjige;
+	TWideStringField *TKnjigePosKategorija;
+	TIntegerField *TKnjigePosKoličina;
+	TWideStringField *TKnjigePosISBN;
+	TWideStringField *TKnjigePosAutor;
+>>>>>>> parent of d8b76a5 (first)
 	TLabel *Label7;
 	TDBEdit *dbEditNaziv;
 	TLabel *Label8;
@@ -61,14 +78,6 @@ __published:	// IDE-managed Components
 	TEdit *editPrezime;
 	TEdit *editClanskiBroj;
 	TEdit *editBrojPosudbi;
-	TADOConnection *ADOConnection1;
-	TADOTable *TKnjige;
-	TADOTable *TPosudbe;
-	TADOTable *TClanovi;
-	TDBGrid *DBGrid1;
-	TDataSource *DClanovi;
-	TDataSource *DPosudbe;
-	TDataSource *DKnjige;
 	void __fastcall FormCreate(TObject *Sender);
 	void __fastcall PosudiClick(TObject *Sender);
 private:	// User declarations
