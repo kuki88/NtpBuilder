@@ -5,7 +5,8 @@
 
 #include "Unit1.h"
 #include "Unit2.h"
-#include <string.h>
+#include "Unit3.h"
+
 // #include "Clanovi.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
@@ -73,11 +74,11 @@ void __fastcall TFormClanoviPosudbe::btnNovaPosudbaClick(TObject *Sender)
 
 
 
-			ShowMessage("Uspješna posudba, član " + FormPosudba->dbEditIme->Text + " je posudio knjigu " + FormPosudba->dbEditNaziv->Text);
+			ShowMessage("Uspješna posudba, član " + FormPosudba->editIme->Text + " je posudio knjigu " + FormPosudba->dbEditNaziv->Text);
 		}
 		else{
-            ShowMessage("Neuspješna posudba, navedena knjiga nije na stanju!");
-        }
+			ShowMessage("Neuspješna posudba, navedena knjiga nije na stanju!");
+		}
 	}
 
 //	std::string clanskiBr(gridClanovi->SelectedRows[0].Items[0].begin(), gridClanovi->SelectedRows[0].Items[0].end());
@@ -85,4 +86,10 @@ void __fastcall TFormClanoviPosudbe::btnNovaPosudbaClick(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
+
+void __fastcall TFormClanoviPosudbe::gridClanoviDblClick(TObject *Sender)
+{
+	Evidencija->ShowModal();
+}
+//---------------------------------------------------------------------------
 
