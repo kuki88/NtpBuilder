@@ -2,7 +2,7 @@
   Left = 0
   Top = 0
   Caption = 'Posudba'
-  ClientHeight = 679
+  ClientHeight = 468
   ClientWidth = 751
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -14,7 +14,7 @@
   OnCreate = FormCreate
   DesignSize = (
     751
-    679)
+    468)
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
@@ -111,17 +111,18 @@
   end
   object Odustani: TButton
     Left = 8
-    Top = 610
+    Top = 399
     Width = 365
     Height = 61
     Anchors = [akLeft, akBottom]
     Caption = 'Odustani'
     ModalResult = 2
     TabOrder = 0
+    ExplicitTop = 610
   end
   object Posudi: TButton
     Left = 378
-    Top = 610
+    Top = 399
     Width = 365
     Height = 61
     Anchors = [akRight, akBottom]
@@ -129,6 +130,7 @@
     ModalResult = 1
     TabOrder = 1
     OnClick = PosudiClick
+    ExplicitTop = 610
   end
   object DBGrid1: TDBGrid
     Left = 8
@@ -146,8 +148,8 @@
     TitleFont.Style = []
   end
   object datePocetna: TDateTimePicker
-    Left = 85
-    Top = 528
+    Left = 87
+    Top = 320
     Width = 144
     Height = 21
     Date = 44603.000000000000000000
@@ -155,61 +157,13 @@
     TabOrder = 3
   end
   object datePovratak: TDateTimePicker
-    Left = 236
-    Top = 528
+    Left = 238
+    Top = 320
     Width = 147
     Height = 21
     Date = 44603.000000000000000000
     Time = 0.753646874996775300
     TabOrder = 4
-  end
-  object dbEditIme: TDBEdit
-    Left = 85
-    Top = 402
-    Width = 145
-    Height = 21
-    ReadOnly = True
-    TabOrder = 5
-  end
-  object dbEditPrezime: TDBEdit
-    Left = 236
-    Top = 402
-    Width = 147
-    Height = 21
-    ReadOnly = True
-    TabOrder = 6
-  end
-  object dbEditTelBroj: TDBEdit
-    Left = 85
-    Top = 445
-    Width = 145
-    Height = 21
-    ReadOnly = True
-    TabOrder = 7
-  end
-  object dbEditClanskiBroj: TDBEdit
-    Left = 236
-    Top = 445
-    Width = 147
-    Height = 21
-    ReadOnly = True
-    TabOrder = 8
-  end
-  object dbEditAdresa: TDBEdit
-    Left = 85
-    Top = 488
-    Width = 145
-    Height = 21
-    ReadOnly = True
-    TabOrder = 9
-  end
-  object dbEditBrojPosudbi: TDBEdit
-    Left = 236
-    Top = 488
-    Width = 147
-    Height = 21
-    ReadOnly = True
-    TabOrder = 10
   end
   object dbEditNaziv: TDBEdit
     Left = 539
@@ -220,7 +174,7 @@
     DataField = 'NazivKnjige'
     DataSource = DKnjigePos
     ReadOnly = True
-    TabOrder = 11
+    TabOrder = 5
   end
   object dbEditKategorija: TDBEdit
     Left = 539
@@ -231,7 +185,7 @@
     DataField = 'Kategorija'
     DataSource = DKnjigePos
     ReadOnly = True
-    TabOrder = 12
+    TabOrder = 6
   end
   object dbEditKolicina: TDBEdit
     Left = 539
@@ -242,7 +196,7 @@
     DataField = 'Koli'#269'ina'
     DataSource = DKnjigePos
     ReadOnly = True
-    TabOrder = 13
+    TabOrder = 7
   end
   object dbEditIsbn: TDBEdit
     Left = 539
@@ -253,7 +207,7 @@
     DataField = 'ISBN'
     DataSource = DKnjigePos
     ReadOnly = True
-    TabOrder = 14
+    TabOrder = 8
   end
   object dbEditAutor: TDBEdit
     Left = 539
@@ -264,7 +218,7 @@
     DataField = 'Autor'
     DataSource = DKnjigePos
     ReadOnly = True
-    TabOrder = 15
+    TabOrder = 9
   end
   object editIme: TEdit
     Left = 85
@@ -272,7 +226,7 @@
     Width = 147
     Height = 21
     ReadOnly = True
-    TabOrder = 16
+    TabOrder = 10
     Text = 'editIme'
   end
   object editTelBroj: TEdit
@@ -281,7 +235,7 @@
     Width = 147
     Height = 21
     ReadOnly = True
-    TabOrder = 17
+    TabOrder = 11
     Text = 'Edit1'
   end
   object editAdresa: TEdit
@@ -290,7 +244,7 @@
     Width = 147
     Height = 21
     ReadOnly = True
-    TabOrder = 18
+    TabOrder = 12
     Text = 'Edit1'
   end
   object editPrezime: TEdit
@@ -299,7 +253,7 @@
     Width = 147
     Height = 21
     ReadOnly = True
-    TabOrder = 19
+    TabOrder = 13
     Text = 'Edit1'
   end
   object editClanskiBroj: TEdit
@@ -308,7 +262,7 @@
     Width = 147
     Height = 21
     ReadOnly = True
-    TabOrder = 20
+    TabOrder = 14
     Text = 'Edit1'
   end
   object editBrojPosudbi: TEdit
@@ -317,11 +271,10 @@
     Width = 147
     Height = 21
     ReadOnly = True
-    TabOrder = 21
+    TabOrder = 15
     Text = 'Edit1'
   end
   object TKnjigePos: TADOTable
-    Active = True
     Connection = ADOConnection1
     CursorType = ctStatic
     TableName = 'Knjige'
@@ -353,7 +306,6 @@
     Top = 16
   end
   object TPosudba: TADOTable
-    Active = True
     Connection = ADOConnection1
     CursorType = ctStatic
     TableName = 'Posudbe'
@@ -366,11 +318,12 @@
     Top = 56
   end
   object ADOConnection1: TADOConnection
-    Connected = True
     ConnectionString = 
       'Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security In' +
       'fo=False;Initial Catalog=KnjiznicaManagement;Data Source=KUKICRO' +
-      '\SQLEXPRESS'
+      '\SQLEXPRESS;Use Procedure for Prepare=1;Auto Translate=True;Pack' +
+      'et Size=4096;Workstation ID=KUKICRO;Use Encryption for Data=Fals' +
+      'e;Tag with column collation when possible=False'
     Provider = 'SQLOLEDB.1'
     Left = 416
     Top = 40

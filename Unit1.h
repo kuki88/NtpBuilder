@@ -33,7 +33,6 @@ __published:	// IDE-managed Components
 	TDateTimeField *TPosudbedatumPosudbe;
 	TDateTimeField *TPosudbedatumPovratka;
 	TWideStringField *TPosudbeclanskiBroj;
-	TStringField *TPosudbeNazivKnjige;
 	TWideStringField *TClanoviclanskiBroj;
 	TStringField *TClanoviime;
 	TStringField *TClanoviprezime;
@@ -65,6 +64,8 @@ __published:	// IDE-managed Components
 	TDBEdit *dbEditPrezime;
 	TDBEdit *dbEditTelBroj;
 	TDBEdit *dbeditAdresa;
+	TStringField *TPosudbeNazivKnjige;
+	TDBEdit *dbTest;
 	void __fastcall btnTraziClick(TObject *Sender);
 	void __fastcall btnNovaPosudbaClick(TObject *Sender);
 private:	// User declarations

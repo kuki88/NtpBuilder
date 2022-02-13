@@ -3,7 +3,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
   Top = 0
   Caption = 'FormClanoviPosudbe'
   ClientHeight = 808
-  ClientWidth = 734
+  ClientWidth = 735
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -12,7 +12,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
   Font.Style = []
   OldCreateOrder = False
   DesignSize = (
-    734
+    735
     808)
   PixelsPerInch = 96
   TextHeight = 13
@@ -207,7 +207,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     OnClick = btnNovaPosudbaClick
   end
   object editPrezime: TEdit
-    Left = 499
+    Left = 500
     Top = 12
     Width = 128
     Height = 21
@@ -215,7 +215,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     TabOrder = 3
   end
   object btnTrazi: TButton
-    Left = 633
+    Left = 634
     Top = 10
     Width = 75
     Height = 25
@@ -370,16 +370,25 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
       TabOrder = 4
     end
   end
+  object dbTest: TDBEdit
+    Left = 568
+    Top = 352
+    Width = 121
+    Height = 21
+    TabOrder = 12
+  end
   object ADOConnection1: TADOConnection
     Connected = True
     ConnectionString = 
       'Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security In' +
       'fo=False;Initial Catalog=KnjiznicaManagement;Data Source=KUKICRO' +
-      '\SQLEXPRESS'
+      '\SQLEXPRESS;Use Procedure for Prepare=1;Auto Translate=True;Pack' +
+      'et Size=4096;Workstation ID=KUKICRO;Use Encryption for Data=Fals' +
+      'e;Tag with column collation when possible=False'
     LoginPrompt = False
     Provider = 'SQLOLEDB.1'
     Left = 40
-    Top = 195
+    Top = 163
   end
   object TKnjige: TADOTable
     Active = True
@@ -401,7 +410,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     MasterSource = DClanovi
     TableName = 'Posudbe'
     Left = 136
-    Top = 195
+    Top = 187
     object TPosudbeId: TAutoIncField
       FieldName = 'Id'
       ReadOnly = True

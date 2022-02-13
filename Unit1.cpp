@@ -70,7 +70,7 @@ void __fastcall TFormClanoviPosudbe::btnNovaPosudbaClick(TObject *Sender)
 
 
 
-			ShowMessage("Uspješna posudba, član " + FormPosudba->dbEditIme->Text + " je posudio knjigu " + FormPosudba->dbEditNaziv->Text);
+			ShowMessage("Uspješna posudba, član " + FormPosudba->dbEditIme->Text + " je posudio knjigu " + FormPosudba->editNaziv->Text);
 		}
 		else{
             ShowMessage("Neuspješna posudba, navedena knjiga nije na stanju!");
@@ -81,5 +81,6 @@ void __fastcall TFormClanoviPosudbe::btnNovaPosudbaClick(TObject *Sender)
 //	Label3->Caption = clanskiBr.c_str();
 }
 //---------------------------------------------------------------------------
+
 
 

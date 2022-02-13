@@ -34,12 +34,6 @@ __published:	// IDE-managed Components
 	TADOTable *TPosudba;
 	TDataSource *DPosudba;
 	TADOConnection *ADOConnection1;
-	TDBEdit *dbEditIme;
-	TDBEdit *dbEditPrezime;
-	TDBEdit *dbEditTelBroj;
-	TDBEdit *dbEditClanskiBroj;
-	TDBEdit *dbEditAdresa;
-	TDBEdit *dbEditBrojPosudbi;
 	TWideStringField *TKnjigePosNazivKnjige;
 	TWideStringField *TKnjigePosKategorija;
 	TIntegerField *TKnjigePosKoličina;
