@@ -5,6 +5,7 @@
 
 #include "Unit1.h"
 #include "Unit2.h"
+#include <string.h>
 // #include "Clanovi.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
@@ -48,6 +49,7 @@ void __fastcall TFormClanoviPosudbe::btnTraziClick(TObject *Sender)
 void __fastcall TFormClanoviPosudbe::btnNovaPosudbaClick(TObject *Sender)
 {
 
+
 	FormPosudba->editAdresa->Text = dbeditAdresa->Text;
 	FormPosudba->editIme->Text = dbEditIme->Text;
 	FormPosudba->editPrezime->Text = dbEditPrezime->Text;
@@ -66,6 +68,7 @@ void __fastcall TFormClanoviPosudbe::btnNovaPosudbaClick(TObject *Sender)
 			TPosudbe->FieldByName("datumPovratka")->AsDateTime = FormPosudba->datePovratak->Date;
 			TPosudbe->FieldByName("clanskiBroj")->AsString = FormPosudba->editClanskiBroj->Text;
 			TPosudbe->Post();
+
 
 
 
