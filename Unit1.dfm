@@ -230,6 +230,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     Width = 200
     Height = 21
     DataField = 'Id'
+    DataSource = DPosudbe
     TabOrder = 5
   end
   object DBEdit2: TDBEdit
@@ -238,6 +239,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     Width = 200
     Height = 21
     DataField = 'isbnKnjige'
+    DataSource = DPosudbe
     TabOrder = 6
   end
   object DBEdit3: TDBEdit
@@ -246,6 +248,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     Width = 200
     Height = 21
     DataField = 'datumPosudbe'
+    DataSource = DPosudbe
     TabOrder = 7
   end
   object DBEdit4: TDBEdit
@@ -254,6 +257,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     Width = 200
     Height = 21
     DataField = 'datumPovratka'
+    DataSource = DPosudbe
     TabOrder = 8
   end
   object DBEdit5: TDBEdit
@@ -262,6 +266,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     Width = 200
     Height = 21
     DataField = 'clanskiBroj'
+    DataSource = DPosudbe
     TabOrder = 9
   end
   object DBEdit6: TDBEdit
@@ -270,6 +275,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     Width = 200
     Height = 21
     DataField = 'Naziv Knjige'
+    DataSource = DPosudbe
     TabOrder = 10
   end
   object GroupBox1: TGroupBox
@@ -324,6 +330,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
       Width = 200
       Height = 21
       DataField = 'clanskiBroj'
+      DataSource = DClanovi
       TabOrder = 0
     end
     object dbEditIme: TDBEdit
@@ -332,6 +339,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
       Width = 200
       Height = 21
       DataField = 'ime'
+      DataSource = DClanovi
       TabOrder = 1
     end
     object dbEditPrezime: TDBEdit
@@ -340,6 +348,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
       Width = 200
       Height = 21
       DataField = 'prezime'
+      DataSource = DClanovi
       TabOrder = 2
     end
     object dbEditTelBroj: TDBEdit
@@ -348,6 +357,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
       Width = 200
       Height = 21
       DataField = 'telefonskiBroj'
+      DataSource = DClanovi
       TabOrder = 3
     end
     object dbeditAdresa: TDBEdit
@@ -356,6 +366,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
       Width = 200
       Height = 21
       DataField = 'adresa'
+      DataSource = DClanovi
       TabOrder = 4
     end
   end
@@ -363,24 +374,23 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     Connected = True
     ConnectionString = 
       'Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security In' +
-      'fo=False;Initial Catalog=KnjiznicaManagement;Data Source=DESKTOP' +
-      '-N5RRRS5\SQLEXPRESS'
+      'fo=False;Initial Catalog=KnjiznicaManagement;Data Source=KUKICRO' +
+      '\SQLEXPRESS'
+    LoginPrompt = False
     Provider = 'SQLOLEDB.1'
-    Left = 96
-    Top = 112
+    Left = 40
+    Top = 195
   end
   object TKnjige: TADOTable
     Active = True
     Connection = ADOConnection1
     CursorType = ctStatic
+    IndexFieldNames = 'ISBN'
+    MasterFields = 'isbnKnjige'
+    MasterSource = DPosudbe
     TableName = 'Knjige'
-    Left = 256
-    Top = 96
-  end
-  object DKnjige: TDataSource
-    DataSet = TKnjige
-    Left = 256
-    Top = 168
+    Left = 88
+    Top = 187
   end
   object TPosudbe: TADOTable
     Active = True
@@ -390,8 +400,8 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     MasterFields = 'clanskiBroj'
     MasterSource = DClanovi
     TableName = 'Posudbe'
-    Left = 328
-    Top = 96
+    Left = 136
+    Top = 195
     object TPosudbeId: TAutoIncField
       FieldName = 'Id'
       ReadOnly = True
@@ -410,23 +420,59 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
       FieldName = 'clanskiBroj'
       Size = 50
     end
+    object TPosudbeNazivKnjige: TStringField
+      FieldKind = fkLookup
+      FieldName = 'Naziv Knjige'
+      LookupDataSet = TKnjige
+      LookupKeyFields = 'ISBN'
+      LookupResultField = 'NazivKnjige'
+      KeyFields = 'isbnKnjige'
+      Size = 100
+      Lookup = True
+    end
+  end
+  object DKnjige: TDataSource
+    DataSet = TKnjige
+    Left = 88
+    Top = 147
   end
   object DPosudbe: TDataSource
     DataSet = TPosudbe
-    Left = 336
-    Top = 168
+    Left = 136
+    Top = 147
   end
   object TClanovi: TADOTable
     Active = True
     Connection = ADOConnection1
     CursorType = ctStatic
+    Filter = 'prezime LIKE "K%"'
     TableName = 'Clanovi'
-    Left = 408
-    Top = 96
+    Left = 184
+    Top = 187
+    object TClanoviclanskiBroj: TWideStringField
+      FieldName = 'clanskiBroj'
+      Size = 50
+    end
+    object TClanoviime: TStringField
+      FieldName = 'ime'
+      Size = 50
+    end
+    object TClanoviprezime: TStringField
+      FieldName = 'prezime'
+      Size = 50
+    end
+    object TClanovitelefonskiBroj: TStringField
+      FieldName = 'telefonskiBroj'
+      Size = 30
+    end
+    object TClanoviadresa: TStringField
+      FieldName = 'adresa'
+      Size = 50
+    end
   end
   object DClanovi: TDataSource
     DataSet = TClanovi
-    Left = 416
-    Top = 168
+    Left = 184
+    Top = 147
   end
 end

@@ -1,4 +1,4 @@
-object FormPosudba: TFormPosudba
+﻿object FormPosudba: TFormPosudba
   Left = 0
   Top = 0
   Caption = 'Posudba'
@@ -130,6 +130,21 @@ object FormPosudba: TFormPosudba
     TabOrder = 1
     OnClick = PosudiClick
   end
+  object DBGrid1: TDBGrid
+    Left = 8
+    Top = 8
+    Width = 735
+    Height = 153
+    Anchors = [akLeft, akTop, akRight]
+    DataSource = DKnjigePos
+    ReadOnly = True
+    TabOrder = 2
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+  end
   object datePocetna: TDateTimePicker
     Left = 85
     Top = 528
@@ -137,7 +152,7 @@ object FormPosudba: TFormPosudba
     Height = 21
     Date = 44603.000000000000000000
     Time = 0.753646874996775300
-    TabOrder = 2
+    TabOrder = 3
   end
   object datePovratak: TDateTimePicker
     Left = 236
@@ -146,7 +161,7 @@ object FormPosudba: TFormPosudba
     Height = 21
     Date = 44603.000000000000000000
     Time = 0.753646874996775300
-    TabOrder = 3
+    TabOrder = 4
   end
   object dbEditIme: TDBEdit
     Left = 85
@@ -154,7 +169,7 @@ object FormPosudba: TFormPosudba
     Width = 145
     Height = 21
     ReadOnly = True
-    TabOrder = 4
+    TabOrder = 5
   end
   object dbEditPrezime: TDBEdit
     Left = 236
@@ -162,7 +177,7 @@ object FormPosudba: TFormPosudba
     Width = 147
     Height = 21
     ReadOnly = True
-    TabOrder = 5
+    TabOrder = 6
   end
   object dbEditTelBroj: TDBEdit
     Left = 85
@@ -170,7 +185,7 @@ object FormPosudba: TFormPosudba
     Width = 145
     Height = 21
     ReadOnly = True
-    TabOrder = 6
+    TabOrder = 7
   end
   object dbEditClanskiBroj: TDBEdit
     Left = 236
@@ -178,7 +193,7 @@ object FormPosudba: TFormPosudba
     Width = 147
     Height = 21
     ReadOnly = True
-    TabOrder = 7
+    TabOrder = 8
   end
   object dbEditAdresa: TDBEdit
     Left = 85
@@ -186,7 +201,7 @@ object FormPosudba: TFormPosudba
     Width = 145
     Height = 21
     ReadOnly = True
-    TabOrder = 8
+    TabOrder = 9
   end
   object dbEditBrojPosudbi: TDBEdit
     Left = 236
@@ -194,7 +209,7 @@ object FormPosudba: TFormPosudba
     Width = 147
     Height = 21
     ReadOnly = True
-    TabOrder = 9
+    TabOrder = 10
   end
   object dbEditNaziv: TDBEdit
     Left = 539
@@ -203,8 +218,9 @@ object FormPosudba: TFormPosudba
     Height = 21
     Anchors = [akTop, akRight]
     DataField = 'NazivKnjige'
+    DataSource = DKnjigePos
     ReadOnly = True
-    TabOrder = 10
+    TabOrder = 11
   end
   object dbEditKategorija: TDBEdit
     Left = 539
@@ -213,8 +229,9 @@ object FormPosudba: TFormPosudba
     Height = 21
     Anchors = [akTop, akRight]
     DataField = 'Kategorija'
+    DataSource = DKnjigePos
     ReadOnly = True
-    TabOrder = 11
+    TabOrder = 12
   end
   object dbEditKolicina: TDBEdit
     Left = 539
@@ -223,8 +240,9 @@ object FormPosudba: TFormPosudba
     Height = 21
     Anchors = [akTop, akRight]
     DataField = 'Koli'#269'ina'
+    DataSource = DKnjigePos
     ReadOnly = True
-    TabOrder = 12
+    TabOrder = 13
   end
   object dbEditIsbn: TDBEdit
     Left = 539
@@ -233,8 +251,9 @@ object FormPosudba: TFormPosudba
     Height = 21
     Anchors = [akTop, akRight]
     DataField = 'ISBN'
+    DataSource = DKnjigePos
     ReadOnly = True
-    TabOrder = 13
+    TabOrder = 14
   end
   object dbEditAutor: TDBEdit
     Left = 539
@@ -243,8 +262,9 @@ object FormPosudba: TFormPosudba
     Height = 21
     Anchors = [akTop, akRight]
     DataField = 'Autor'
+    DataSource = DKnjigePos
     ReadOnly = True
-    TabOrder = 14
+    TabOrder = 15
   end
   object editIme: TEdit
     Left = 85
@@ -252,7 +272,7 @@ object FormPosudba: TFormPosudba
     Width = 147
     Height = 21
     ReadOnly = True
-    TabOrder = 15
+    TabOrder = 16
     Text = 'editIme'
   end
   object editTelBroj: TEdit
@@ -261,7 +281,7 @@ object FormPosudba: TFormPosudba
     Width = 147
     Height = 21
     ReadOnly = True
-    TabOrder = 16
+    TabOrder = 17
     Text = 'Edit1'
   end
   object editAdresa: TEdit
@@ -270,7 +290,7 @@ object FormPosudba: TFormPosudba
     Width = 147
     Height = 21
     ReadOnly = True
-    TabOrder = 17
+    TabOrder = 18
     Text = 'Edit1'
   end
   object editPrezime: TEdit
@@ -279,7 +299,7 @@ object FormPosudba: TFormPosudba
     Width = 147
     Height = 21
     ReadOnly = True
-    TabOrder = 18
+    TabOrder = 19
     Text = 'Edit1'
   end
   object editClanskiBroj: TEdit
@@ -288,7 +308,7 @@ object FormPosudba: TFormPosudba
     Width = 147
     Height = 21
     ReadOnly = True
-    TabOrder = 19
+    TabOrder = 20
     Text = 'Edit1'
   end
   object editBrojPosudbi: TEdit
@@ -297,64 +317,62 @@ object FormPosudba: TFormPosudba
     Width = 147
     Height = 21
     ReadOnly = True
-    TabOrder = 20
+    TabOrder = 21
     Text = 'Edit1'
   end
-  object DBGrid1: TDBGrid
-    Left = 8
-    Top = 8
-    Width = 735
-    Height = 153
-    Anchors = [akLeft, akTop, akRight]
-    ReadOnly = True
-    TabOrder = 21
-    TitleFont.Charset = DEFAULT_CHARSET
-    TitleFont.Color = clWindowText
-    TitleFont.Height = -11
-    TitleFont.Name = 'Tahoma'
-    TitleFont.Style = []
+  object TKnjigePos: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'Knjige'
+    Left = 464
+    Top = 16
+    object TKnjigePosNazivKnjige: TWideStringField
+      FieldName = 'NazivKnjige'
+      Size = 50
+    end
+    object TKnjigePosKategorija: TWideStringField
+      FieldName = 'Kategorija'
+      Size = 50
+    end
+    object TKnjigePosKoličina: TIntegerField
+      FieldName = 'Koli'#269'ina'
+    end
+    object TKnjigePosISBN: TWideStringField
+      FieldName = 'ISBN'
+      Size = 25
+    end
+    object TKnjigePosAutor: TWideStringField
+      FieldName = 'Autor'
+      Size = 50
+    end
+  end
+  object DKnjigePos: TDataSource
+    DataSet = TKnjigePos
+    Left = 512
+    Top = 16
+  end
+  object TPosudba: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'Posudbe'
+    Left = 464
+    Top = 56
+  end
+  object DPosudba: TDataSource
+    DataSet = TPosudba
+    Left = 512
+    Top = 56
   end
   object ADOConnection1: TADOConnection
     Connected = True
     ConnectionString = 
       'Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security In' +
-      'fo=False;Initial Catalog=KnjiznicaManagement;Data Source=DESKTOP' +
-      '-N5RRRS5\SQLEXPRESS'
+      'fo=False;Initial Catalog=KnjiznicaManagement;Data Source=KUKICRO' +
+      '\SQLEXPRESS'
     Provider = 'SQLOLEDB.1'
-    Left = 104
-    Top = 72
-  end
-  object TKnjige: TADOTable
-    Connection = ADOConnection1
-    TableName = 'Knjige'
-    Left = 224
-    Top = 32
-  end
-  object TPosudbe: TADOTable
-    Connection = ADOConnection1
-    TableName = 'Posudbe'
-    Left = 296
-    Top = 32
-  end
-  object TClanovi: TADOTable
-    Connection = ADOConnection1
-    TableName = 'Clanovi'
-    Left = 376
-    Top = 32
-  end
-  object DClanovi: TDataSource
-    DataSet = TClanovi
-    Left = 376
-    Top = 104
-  end
-  object DPosudbe: TDataSource
-    DataSet = TPosudbe
-    Left = 296
-    Top = 104
-  end
-  object DKnjige: TDataSource
-    DataSet = TKnjige
-    Left = 216
-    Top = 104
+    Left = 416
+    Top = 40
   end
 end

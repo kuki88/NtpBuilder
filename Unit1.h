@@ -17,10 +17,28 @@
 class TFormClanoviPosudbe : public TForm
 {
 __published:	// IDE-managed Components
+	TADOConnection *ADOConnection1;
+	TADOTable *TKnjige;
+	TADOTable *TPosudbe;
 	TDBGrid *gridPosudbe;
+	TDataSource *DKnjige;
+	TDataSource *DPosudbe;
 	TLabel *Label1;
 	TDBGrid *gridClanovi;
 	TLabel *Label2;
+	TADOTable *TClanovi;
+	TDataSource *DClanovi;
+	TAutoIncField *TPosudbeId;
+	TWideStringField *TPosudbeisbnKnjige;
+	TDateTimeField *TPosudbedatumPosudbe;
+	TDateTimeField *TPosudbedatumPovratka;
+	TWideStringField *TPosudbeclanskiBroj;
+	TStringField *TPosudbeNazivKnjige;
+	TWideStringField *TClanoviclanskiBroj;
+	TStringField *TClanoviime;
+	TStringField *TClanoviprezime;
+	TStringField *TClanovitelefonskiBroj;
+	TStringField *TClanoviadresa;
 	TButton *btnNovaPosudba;
 	TEdit *editPrezime;
 	TButton *btnTrazi;
@@ -47,18 +65,6 @@ __published:	// IDE-managed Components
 	TDBEdit *dbEditPrezime;
 	TDBEdit *dbEditTelBroj;
 	TDBEdit *dbeditAdresa;
-	TADOConnection *ADOConnection1;
-	TADOTable *TKnjige;
-	TDataSource *DKnjige;
-	TADOTable *TPosudbe;
-	TDataSource *DPosudbe;
-	TADOTable *TClanovi;
-	TDataSource *DClanovi;
-	TAutoIncField *TPosudbeId;
-	TWideStringField *TPosudbeisbnKnjige;
-	TDateTimeField *TPosudbedatumPosudbe;
-	TDateTimeField *TPosudbedatumPovratka;
-	TWideStringField *TPosudbeclanskiBroj;
 	void __fastcall btnTraziClick(TObject *Sender);
 	void __fastcall btnNovaPosudbaClick(TObject *Sender);
 private:	// User declarations

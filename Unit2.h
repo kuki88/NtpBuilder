@@ -18,8 +18,11 @@
 class TFormPosudba : public TForm
 {
 __published:	// IDE-managed Components
+	TADOTable *TKnjigePos;
+	TDataSource *DKnjigePos;
 	TButton *Odustani;
 	TButton *Posudi;
+	TDBGrid *DBGrid1;
 	TLabel *Label1;
 	TLabel *Label2;
 	TLabel *Label3;
@@ -28,12 +31,20 @@ __published:	// IDE-managed Components
 	TDateTimePicker *datePocetna;
 	TDateTimePicker *datePovratak;
 	TLabel *Label6;
+	TADOTable *TPosudba;
+	TDataSource *DPosudba;
+	TADOConnection *ADOConnection1;
 	TDBEdit *dbEditIme;
 	TDBEdit *dbEditPrezime;
 	TDBEdit *dbEditTelBroj;
 	TDBEdit *dbEditClanskiBroj;
 	TDBEdit *dbEditAdresa;
 	TDBEdit *dbEditBrojPosudbi;
+	TWideStringField *TKnjigePosNazivKnjige;
+	TWideStringField *TKnjigePosKategorija;
+	TIntegerField *TKnjigePosKoličina;
+	TWideStringField *TKnjigePosISBN;
+	TWideStringField *TKnjigePosAutor;
 	TLabel *Label7;
 	TDBEdit *dbEditNaziv;
 	TLabel *Label8;
@@ -50,14 +61,6 @@ __published:	// IDE-managed Components
 	TEdit *editPrezime;
 	TEdit *editClanskiBroj;
 	TEdit *editBrojPosudbi;
-	TADOConnection *ADOConnection1;
-	TADOTable *TKnjige;
-	TADOTable *TPosudbe;
-	TADOTable *TClanovi;
-	TDBGrid *DBGrid1;
-	TDataSource *DClanovi;
-	TDataSource *DPosudbe;
-	TDataSource *DKnjige;
 	void __fastcall FormCreate(TObject *Sender);
 	void __fastcall PosudiClick(TObject *Sender);
 private:	// User declarations
