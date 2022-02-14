@@ -60,7 +60,6 @@ object FormLogin: TFormLogin
     Font.Style = []
     ParentFont = False
     TabOrder = 0
-    Text = 'editKorisnicko'
   end
   object btnLogin: TButton
     Left = 8
@@ -91,7 +90,6 @@ object FormLogin: TFormLogin
     Font.Style = []
     ParentFont = False
     TabOrder = 2
-    Text = 'Edit1'
   end
   object ADOTable1: TADOTable
     ConnectionString = 

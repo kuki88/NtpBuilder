@@ -50,26 +50,42 @@ object FormTCP: TFormTCP
     TabOrder = 1
     OnClick = btnConnDiscClick
   end
-  object Edit1: TEdit
+  object editPodatak: TEdit
     Left = 8
     Top = 154
     Width = 121
     Height = 21
     TabOrder = 2
-    Text = 'Edit1'
+    Text = 'editPodatak'
+  end
+  object Button1: TButton
+    Left = 8
+    Top = 181
+    Width = 121
+    Height = 36
+    Caption = 'Button1'
+    TabOrder = 3
+    OnClick = Button1Click
   end
   object TCPKlijent: TIdTCPClient
     ConnectTimeout = 0
+    Host = '127.1.0.0'
     IPVersion = Id_IPv4
-    Port = 0
+    Port = 4567
     ReadTimeout = -1
     Left = 176
     Top = 16
   end
   object TCPServer: TIdTCPServer
-    Bindings = <>
-    DefaultPort = 0
-    Left = 248
-    Top = 16
+    Active = True
+    Bindings = <
+      item
+        IP = '0.0.0.0'
+        Port = 4568
+      end>
+    DefaultPort = 4568
+    OnExecute = TCPServerExecute
+    Left = 176
+    Top = 104
   end
 end

@@ -16,11 +16,11 @@ int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 	{
 		Application->Initialize();
 		Application->MainFormOnTaskBar = true;
+		Application->CreateForm(__classid(TFormTCP), &FormTCP);
+		Application->CreateForm(__classid(TFormLogin), &FormLogin);
 		Application->CreateForm(__classid(TFormMain), &FormMain);
 		Application->CreateForm(__classid(TFormClanoviPosudbe), &FormClanoviPosudbe);
 		Application->CreateForm(__classid(TFormPosudba), &FormPosudba);
-		Application->CreateForm(__classid(TFormTCP), &FormTCP);
-		Application->CreateForm(__classid(TFormLogin), &FormLogin);
 		Application->Run();
 	}
 	catch (Exception &exception)

@@ -1,0 +1,91 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#include <memory>
+#include <system.JSON.hpp>
+#pragma hdrstop
+
+#include "Unit3.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TFormTCP *FormTCP;
+int randPort = 1000+ (rand() % 9999);
+//---------------------------------------------------------------------------
+__fastcall TFormTCP::TFormTCP(TComponent* Owner)
+	: TForm(Owner)
+{
+
+}
+//---------------------------------------------------------------------------
+void __fastcall TFormTCP::btnConnDiscClick(TObject *Sender)
+{
+
+	//spajanje na tcp server
+
+	if (TCPKlijent->Connected()){
+		TCPKlijent->Disconnect();
+		labelSpojeno->Caption = "Odspojeno";
+		btnConnDisc->Caption = "Spoji";
+    }
+    else {
+		TCPKlijent->Connect();
+        btnConnDisc->Caption = "Odspoji";
+		labelSpojeno->Caption = "Spojeno";
+	}
+
+
+
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TFormTCP::TCPServerExecute(TIdContext *AContext)
+{
+
+	if(AContext->Connection->Socket->ReadLn() == "greska"){
+		ShowMessage("Korisnik nema posudbi!");
+        return;
+	}
+
+	TThread::Synchronize(TThread::CurrentThread,
+		[&](){
+		//primamo json file
+		UnicodeString naziv = AContext->Connection->Socket->ReadLn();
+		int velicina = AContext->Connection->Socket->ReadInt64();
+
+		std::unique_ptr<TFileStream> jsonFile(new TFileStream(naziv, fmCreate));
+		AContext->Connection->Socket->ReadStream(jsonFile.get(), velicina);
+	});
+
+	AContext->Connection->Disconnect();
+
+	//ucitavamo json kao unique ptr i postavljamo njegov datastring u varijablu
+
+	std::unique_ptr<TStringStream> jsonFinal (new TStringStream);
+	jsonFinal->LoadFromFile("datumi.json");
+	UnicodeString jsonContent = jsonFinal->DataString;
+
+	ShowMessage(jsonContent);
+
+	TJSONObject* js1 = (TJSONObject*)TJSONObject::ParseJSONValue(jsonContent);
+	TJSONArray* js2 = (TJSONArray*)TJSONObject::ParseJSONValue(js1->ToString());
+
+	String var = js2->Items[0]->GetValue<UnicodeString>("ime");
+
+	ShowMessage(var);
+
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TFormTCP::Button1Click(TObject *Sender)
+{
+
+	TThread::Synchronize(TThread::CurrentThread,
+		[&](){
+		//saljemo na tcp server podatke
+		TCPKlijent->Socket->WriteLn(editPodatak->Text);
+	});
+}
+//---------------------------------------------------------------------------
+

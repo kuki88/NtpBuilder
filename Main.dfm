@@ -2,7 +2,7 @@ object FormMain: TFormMain
   Left = 0
   Top = 0
   Caption = 'FormMain'
-  ClientHeight = 382
+  ClientHeight = 334
   ClientWidth = 475
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -21,7 +21,7 @@ object FormMain: TFormMain
     Height = 13
   end
   object btnLogin: TButton
-    Left = 384
+    Left = 392
     Top = 8
     Width = 75
     Height = 25

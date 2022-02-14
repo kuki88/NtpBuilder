@@ -380,8 +380,8 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
       'e;Tag with column collation when possible=False'
     LoginPrompt = False
     Provider = 'SQLOLEDB.1'
-    Left = 40
-    Top = 163
+    Left = 520
+    Top = 171
   end
   object TKnjige: TADOTable
     Active = True
@@ -391,19 +391,18 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     MasterFields = 'isbnKnjige'
     MasterSource = DPosudbe
     TableName = 'Knjige'
-    Left = 88
-    Top = 187
+    Left = 568
+    Top = 195
   end
   object TPosudbe: TADOTable
-    Active = True
     Connection = ADOConnection1
     CursorType = ctStatic
     IndexFieldNames = 'clanskiBroj'
     MasterFields = 'clanskiBroj'
     MasterSource = DClanovi
     TableName = 'Posudbe'
-    Left = 136
-    Top = 187
+    Left = 616
+    Top = 195
     object TPosudbeId: TAutoIncField
       FieldName = 'Id'
       ReadOnly = True
@@ -435,13 +434,13 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
   end
   object DKnjige: TDataSource
     DataSet = TKnjige
-    Left = 88
-    Top = 147
+    Left = 568
+    Top = 155
   end
   object DPosudbe: TDataSource
     DataSet = TPosudbe
-    Left = 136
-    Top = 147
+    Left = 616
+    Top = 155
   end
   object TClanovi: TADOTable
     Active = True
@@ -449,8 +448,8 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     CursorType = ctStatic
     Filter = 'prezime LIKE "K%"'
     TableName = 'Clanovi'
-    Left = 184
-    Top = 187
+    Left = 664
+    Top = 195
     object TClanoviclanskiBroj: TWideStringField
       FieldName = 'clanskiBroj'
       Size = 50
@@ -474,7 +473,7 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
   end
   object DClanovi: TDataSource
     DataSet = TClanovi
-    Left = 184
-    Top = 147
+    Left = 664
+    Top = 155
   end
 end

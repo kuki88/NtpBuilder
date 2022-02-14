@@ -18,15 +18,16 @@ __fastcall TFormLogin::TFormLogin(TComponent* Owner)
 //---------------------------------------------------------------------------
 void __fastcall TFormLogin::btnLoginClick(TObject *Sender)
 {
+
+	//hashiramo lozinku koja je unesena
 	TIdHashMessageDigest5* md5 = new TIdHashMessageDigest5;
 	UnicodeString hashLozinka = md5->HashStringAsHex(editLozinka->Text);
 
+	//upisujemo query i provjeravamo postoji li rezultat u bazi
 	UnicodeString query = "select * from admin where korisnickoIme = '" + editKorisnicko->Text +
 					 "' AND lozinka = '" + hashLozinka + "'";
-	AnsiString ansiQuery = query;
-
 	ADOQuery1->ConnectionString = "Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=KnjiznicaManagement;Data Source=KUKICRO\\SQLEXPRESS;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=KUKICRO;Use Encryption for Data=False;Tag with column collation when possible=False";
-	ADOQuery1->SQL->Add(ansiQuery);
+	ADOQuery1->SQL->Add(query);
 
 	ADOQuery1->Prepared = true;
 
@@ -41,17 +42,21 @@ void __fastcall TFormLogin::btnLoginClick(TObject *Sender)
 		return;
 	}
 
+
+	//postavljamo data source
 	TDataSource* Src = new TDataSource(this);
 	Src->DataSet = ADOQuery1;
 	Src->Enabled = true;
 
+
+	//ako nema dataset u datasource onda izlazimo iz funkcije
 	if(Src->DataSet->RecordCount < 1){
-        ADOQuery1->SQL->Delete(0);
+		ADOQuery1->SQL->Clear();
 
 		labelPrijava->Visible = true;
 		ADOQuery1->Prepared = false;
 
-        Src->Enabled = false;
+		Src->Enabled = false;
 
 		try{
 			ADOQuery1->Active = false;
@@ -63,6 +68,7 @@ void __fastcall TFormLogin::btnLoginClick(TObject *Sender)
 		return;
 	}
 
+    //uspjesna prijava, izlazimo iz login forme
 	FormMain->labelUlogiran->Caption = Src->DataSet->FieldByName("korisnickoIme")->AsString;
     FormLogin->Close();
 }
