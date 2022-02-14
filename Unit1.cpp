@@ -85,3 +85,12 @@ void __fastcall TFormClanoviPosudbe::btnNovaPosudbaClick(TObject *Sender)
 
 
 
+void __fastcall TFormClanoviPosudbe::Button1Click(TObject *Sender)
+{
+    std::string aa(gridClanovi->SelectedRows[0].Items[0].begin(),
+			   gridClanovi->SelectedRows[0].Items[0].end());
+
+    ShowMessage(aa.c_str());
+}
+//---------------------------------------------------------------------------
+

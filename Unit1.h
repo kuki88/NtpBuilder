@@ -65,10 +65,9 @@ __published:	// IDE-managed Components
 	TDBEdit *dbEditTelBroj;
 	TDBEdit *dbeditAdresa;
 	TStringField *TPosudbeNazivKnjige;
-	TDBEdit *dbTest;
-	TLabel *Label3;
 	void __fastcall btnTraziClick(TObject *Sender);
 	void __fastcall btnNovaPosudbaClick(TObject *Sender);
+	void __fastcall Button1Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFormClanoviPosudbe(TComponent* Owner);

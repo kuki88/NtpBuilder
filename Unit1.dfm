@@ -93,13 +93,6 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
     Caption = 'Naziv Knjige'
     FocusControl = DBEdit6
   end
-  object Label3: TLabel
-    Left = 568
-    Top = 408
-    Width = 31
-    Height = 13
-    Caption = 'Label3'
-  end
   object gridPosudbe: TDBGrid
     Left = 6
     Top = 591
@@ -376,13 +369,6 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
       DataSource = DClanovi
       TabOrder = 4
     end
-  end
-  object dbTest: TDBEdit
-    Left = 568
-    Top = 352
-    Width = 121
-    Height = 21
-    TabOrder = 12
   end
   object ADOConnection1: TADOConnection
     Connected = True

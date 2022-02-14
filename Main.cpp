@@ -1,6 +1,7 @@
 //---------------------------------------------------------------------------
 
 #include <vcl.h>
+#include <idhashmessagedigest.hpp>
 #pragma hdrstop
 
 #include "Main.h"
@@ -21,4 +22,5 @@ void __fastcall TFormMain::FormActivate(TObject *Sender)
 	FormLogin->ShowModal();
 }
 //---------------------------------------------------------------------------
+
 
