@@ -118,7 +118,6 @@
     Caption = 'Odustani'
     ModalResult = 2
     TabOrder = 0
-    ExplicitTop = 610
   end
   object Posudi: TButton
     Left = 378
@@ -130,7 +129,6 @@
     ModalResult = 1
     TabOrder = 1
     OnClick = PosudiClick
-    ExplicitTop = 610
   end
   object DBGrid1: TDBGrid
     Left = 8
@@ -275,7 +273,11 @@
     Text = 'Edit1'
   end
   object TKnjigePos: TADOTable
-    Connection = ADOConnection1
+    Active = True
+    ConnectionString = 
+      'Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security In' +
+      'fo=False;Initial Catalog=KnjiznicaManagement;Data Source=DESKTOP' +
+      '-N5RRRS5\SQLEXPRESS'
     CursorType = ctStatic
     TableName = 'Knjige'
     Left = 464
@@ -306,7 +308,11 @@
     Top = 16
   end
   object TPosudba: TADOTable
-    Connection = ADOConnection1
+    Active = True
+    ConnectionString = 
+      'Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security In' +
+      'fo=False;Initial Catalog=KnjiznicaManagement;Data Source=DESKTOP' +
+      '-N5RRRS5\SQLEXPRESS'
     CursorType = ctStatic
     TableName = 'Posudbe'
     Left = 464
@@ -320,12 +326,10 @@
   object ADOConnection1: TADOConnection
     ConnectionString = 
       'Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security In' +
-      'fo=False;Initial Catalog=KnjiznicaManagement;Data Source=KUKICRO' +
-      '\SQLEXPRESS;Use Procedure for Prepare=1;Auto Translate=True;Pack' +
-      'et Size=4096;Workstation ID=KUKICRO;Use Encryption for Data=Fals' +
-      'e;Tag with column collation when possible=False'
+      'fo=False;Initial Catalog=KnjiznicaManagement;Data Source=DESKTOP' +
+      '-N5RRRS5\SQLEXPRESS'
     Provider = 'SQLOLEDB.1'
-    Left = 416
+    Left = 384
     Top = 40
   end
 end
