@@ -143,6 +143,12 @@
             <BuildOrder>1</BuildOrder>
             <PCH>true</PCH>
         </PCHCompile>
+        <CppCompile Include="TcpKlijentTestForma.cpp">
+            <Form>FormTCP</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>TcpKlijentTestForma.h</DependentOn>
+            <BuildOrder>5</BuildOrder>
+        </CppCompile>
         <CppCompile Include="Unit1.cpp">
             <Form>FormClanoviPosudbe</Form>
             <FormType>dfm</FormType>
@@ -155,15 +161,9 @@
             <DependentOn>Unit2.h</DependentOn>
             <BuildOrder>4</BuildOrder>
         </CppCompile>
-        <CppCompile Include="Unit3.cpp">
-            <Form>FormTCP</Form>
-            <FormType>dfm</FormType>
-            <DependentOn>Unit3.h</DependentOn>
-            <BuildOrder>5</BuildOrder>
-        </CppCompile>
+        <FormResources Include="TcpKlijentTestForma.dfm"/>
         <FormResources Include="Unit1.dfm"/>
         <FormResources Include="Unit2.dfm"/>
-        <FormResources Include="Unit3.dfm"/>
         <FormResources Include="Login.dfm"/>
         <FormResources Include="Main.dfm"/>
         <BuildConfiguration Include="Release">

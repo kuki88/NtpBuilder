@@ -6,9 +6,9 @@
 //---------------------------------------------------------------------------
 USEFORM("Unit1.cpp", FormClanoviPosudbe);
 USEFORM("Unit2.cpp", FormPosudba);
-USEFORM("Unit3.cpp", FormTCP);
-USEFORM("Main.cpp", FormMain);
+USEFORM("TcpKlijentTestForma.cpp", FormTCP);
 USEFORM("Login.cpp", FormLogin);
+USEFORM("Main.cpp", FormMain);
 //---------------------------------------------------------------------------
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 {

@@ -1,32 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899.12.30 00:00:00.000.794,D:\C++ Builder Projects\Knjiznica\Unit3.h=D:\C++ Builder Projects\Knjiznica\Clanovi.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.115,D:\C++ Builder Projects\Knjiznica\Unit3.dfm=D:\C++ Builder Projects\Knjiznica\TcpKlijentTestForma.dfm</Transaction>
     <Transaction>1899.12.30 00:00:00.000.016,D:\C++ Builder Projects\Knjiznica\Main.h=D:\C++ Builder Projects\Knjiznica\Unit4.h</Transaction>
     <Transaction>1899.12.30 00:00:00.000.924,=D:\C++ Builder Projects\Knjiznica\Unit5.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.016,D:\C++ Builder Projects\Knjiznica\Main.cpp=D:\C++ Builder Projects\Knjiznica\Unit4.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.115,D:\C++ Builder Projects\Knjiznica\Unit3.h=D:\C++ Builder Projects\Knjiznica\TcpKlijentTestForma.h</Transaction>
     <Transaction>1899.12.30 00:00:00.000.916,D:\C++ Builder Projects\Project1.cbproj=D:\C++ Builder Projects\Knjiznica\Project1.cbproj</Transaction>
     <Transaction>1899.12.30 00:00:00.000.275,D:\C++ Builder Projects\Unit1.h=D:\C++ Builder Projects\Knjiznica\Unit1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.455,=D:\C++ Builder Projects\Knjiznica\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.794,D:\C++ Builder Projects\Knjiznica\Unit3.h=D:\C++ Builder Projects\Knjiznica\Clanovi.h</Transaction>
     <Transaction>1899.12.30 00:00:00.000.275,D:\C++ Builder Projects\Unit1.cpp=D:\C++ Builder Projects\Knjiznica\Unit1.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.485,=D:\C++ Builder Projects\Unit1.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.998,=D:\C++ Builder Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.906,D:\C++ Builder Projects\Knjiznica\Login.dfm=D:\C++ Builder Projects\Knjiznica\Unit5.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.455,=D:\C++ Builder Projects\Knjiznica\Unit2.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.845,D:\C++ Builder Projects\Knjiznica\Unit2.cpp=</Transaction>
     <Transaction>1899.12.30 00:00:00.000.712,=D:\C++ Builder Projects\Knjiznica\Unit2.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.906,D:\C++ Builder Projects\Knjiznica\Login.dfm=D:\C++ Builder Projects\Knjiznica\Unit5.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.680,=D:\C++ Builder Projects\Knjiznica\Unit4.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.016,D:\C++ Builder Projects\Knjiznica\Main.cpp=D:\C++ Builder Projects\Knjiznica\Unit4.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.285,=D:\C++ Builder Projects\Knjiznica\Unit3.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.794,D:\C++ Builder Projects\Knjiznica\Unit3.cpp=D:\C++ Builder Projects\Knjiznica\Clanovi.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.670,=D:\C++ Builder Projects\Knjiznica\Unit3.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.834,=D:\C++ Builder Projects\Knjiznica\Unit3.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.680,=D:\C++ Builder Projects\Knjiznica\Unit4.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.016,D:\C++ Builder Projects\Knjiznica\Main.dfm=D:\C++ Builder Projects\Knjiznica\Unit4.dfm</Transaction>
     <Transaction>1899.12.30 00:00:00.000.275,D:\C++ Builder Projects\Unit1.dfm=D:\C++ Builder Projects\Knjiznica\Unit1.dfm</Transaction>
     <Transaction>1899.12.30 00:00:00.000.906,D:\C++ Builder Projects\Knjiznica\Login.h=D:\C++ Builder Projects\Knjiznica\Unit5.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.670,=D:\C++ Builder Projects\Knjiznica\Unit3.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.261,=D:\C++ Builder Projects\Project1PCH1.h</Transaction>
     <Transaction>1899.12.30 00:00:00.000.942,=D:\C++ Builder Projects\Project1PCH1.h</Transaction>
     <Transaction>1899.12.30 00:00:00.000.906,D:\C++ Builder Projects\Knjiznica\Login.cpp=D:\C++ Builder Projects\Knjiznica\Unit5.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.834,=D:\C++ Builder Projects\Knjiznica\Unit3.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.522,=D:\C++ Builder Projects\Knjiznica\Unit3.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.098,D:\C++ Builder Projects\Project1PCH1.h=D:\C++ Builder Projects\Knjiznica\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.794,D:\C++ Builder Projects\Knjiznica\Unit3.cpp=D:\C++ Builder Projects\Knjiznica\Clanovi.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.522,=D:\C++ Builder Projects\Knjiznica\Unit3.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.115,D:\C++ Builder Projects\Knjiznica\Unit3.cpp=D:\C++ Builder Projects\Knjiznica\TcpKlijentTestForma.cpp</Transaction>
   </Transactions>
 	<ProjectSortOrder AutoSort="0" SortType="0">
     <File Path="Clanovi.cpp"/>
@@ -46,10 +49,10 @@
     <File Path="Unit2.cpp"/>
     <File Path="Unit2.dfm"/>
     <File Path="Unit2.h"/>
-    <File Path="Unit3.cpp"/>
-    <File Path="Unit3.cpp"/>
-    <File Path="Unit3.dfm"/>
-    <File Path="Unit3.h"/>
+    <File Path="TcpKlijentTestForma.cpp"/>
+    <File Path="TcpKlijentTestForma.cpp"/>
+    <File Path="TcpKlijentTestForma.dfm"/>
+    <File Path="TcpKlijentTestForma.h"/>
     <File Path="Login.cpp"/>
     <File Path="Login.cpp"/>
     <File Path="Login.dfm"/>

@@ -8,7 +8,7 @@ USEFORM("Unit1.cpp", FormClanoviPosudbe);
 USEFORM("Unit2.cpp", FormPosudba);
 USEFORM("Unit3.cpp", FormTCP);
 USEFORM("Main.cpp", FormMain);
-USEFORM("Login.cpp", Form5);
+USEFORM("Login.cpp", FormLogin);
 //---------------------------------------------------------------------------
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 {
@@ -16,11 +16,11 @@ int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 	{
 		Application->Initialize();
 		Application->MainFormOnTaskBar = true;
+		Application->CreateForm(__classid(TFormTCP), &FormTCP);
+		Application->CreateForm(__classid(TFormLogin), &FormLogin);
+		Application->CreateForm(__classid(TFormMain), &FormMain);
 		Application->CreateForm(__classid(TFormClanoviPosudbe), &FormClanoviPosudbe);
 		Application->CreateForm(__classid(TFormPosudba), &FormPosudba);
-		Application->CreateForm(__classid(TFormTCP), &FormTCP);
-		Application->CreateForm(__classid(TFormMain), &FormMain);
-		Application->CreateForm(__classid(TForm5), &Form5);
 		Application->Run();
 	}
 	catch (Exception &exception)
