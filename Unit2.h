@@ -14,6 +14,7 @@
 #include <Vcl.ComCtrls.hpp>
 #include <Vcl.DBCtrls.hpp>
 #include <Vcl.Mask.hpp>
+#include <Vcl.Dialogs.hpp>
 //---------------------------------------------------------------------------
 class TFormPosudba : public TForm
 {

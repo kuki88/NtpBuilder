@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xdb="http://www.borland.com/schemas/delphi/10.0/XMLDataBinding">
+	<xs:element name="clanovi" type="clanoviType"/>
+	<xs:complexType name="clanoviType"><xs:annotation>
+			<xs:appinfo xdb:docElement="clanovi"/>
+		</xs:annotation>
+		<sequence xmlns="http://www.w3.org/2001/XMLSchema">
+			<xs:element name="clan" type="clanType" maxOccurs="unbounded"/>
+		</sequence>
+	</xs:complexType>
+	<xs:complexType name="clanType">
+		<sequence xmlns="http://www.w3.org/2001/XMLSchema">
+			<xs:element name="clanski_broj" type="xs:string"/>
+			<xs:element name="ime" type="xs:string"/>
+			<xs:element name="prezime" type="xs:string"/>
+			<xs:element name="telefonski_broj" type="xs:integer"/>
+			<xs:element name="adresa" type="xs:string"/>
+		</sequence>
+	</xs:complexType>
+</xs:schema>

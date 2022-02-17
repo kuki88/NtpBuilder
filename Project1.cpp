@@ -4,9 +4,10 @@
 #pragma hdrstop
 #include <tchar.h>
 //---------------------------------------------------------------------------
-USEFORM("Unit2.cpp", FormPosudba);
 USEFORM("Unit1.cpp", FormClanoviPosudbe);
+USEFORM("Unit2.cpp", FormPosudba);
 USEFORM("Unit4.cpp", formPosudbe);
+USEFORM("Unit5.cpp", formImport);
 //---------------------------------------------------------------------------
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 {
@@ -17,6 +18,7 @@ int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 		Application->CreateForm(__classid(TFormClanoviPosudbe), &FormClanoviPosudbe);
 		Application->CreateForm(__classid(TFormPosudba), &FormPosudba);
 		Application->CreateForm(__classid(TformPosudbe), &formPosudbe);
+		Application->CreateForm(__classid(TformImport), &formImport);
 		Application->Run();
 	}
 	catch (Exception &exception)

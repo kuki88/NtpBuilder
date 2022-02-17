@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clanovi>
+    <clan>
+    <clanski_broj>01/123456</clanski_broj>
+    <ime>Kristijan</ime>
+    <prezime>Lovrić</prezime>
+    <telefonski_broj>0991112233</telefonski_broj>
+    <adresa>Jarunska ulica 3</adresa>
+    </clan>
+    <clan>
+    <clanski_broj>02/123456</clanski_broj>
+    <ime>Jakob</ime>
+    <prezime>Lovrić</prezime>
+    <telefonski_broj>0941112433</telefonski_broj>
+    <adresa>Jarunska ulica 5</adresa>
+    </clan>
+    <clan>
+    <clanski_broj>02/923456</clanski_broj>
+    <ime>Kristijan</ime>
+    <prezime>Lovrić</prezime>
+    <telefonski_broj>0931112233</telefonski_broj>
+    <adresa>Jarunska ulica 4</adresa>
+    </clan>
+</clanovi>

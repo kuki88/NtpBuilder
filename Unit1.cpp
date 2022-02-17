@@ -4,6 +4,7 @@
 #include "Unit1.h"
 #include "Unit2.h"
 #include "Unit4.h"
+#include "Unit5.h"
 
 // #include "Clanovi.h"
 //---------------------------------------------------------------------------
@@ -75,6 +76,13 @@ void __fastcall TFormClanoviPosudbe::gridClanoviDblClick(TObject *Sender)
 {
 	formPosudbe->ShowModal();
 
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TFormClanoviPosudbe::Import1Click(TObject *Sender)
+{
+	formImport->ShowModal();
 }
 //---------------------------------------------------------------------------
 

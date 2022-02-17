@@ -14,6 +14,7 @@
 #include <Vcl.DBCtrls.hpp>
 #include <Vcl.Mask.hpp>
 #include <Vcl.ExtCtrls.hpp>
+#include <Vcl.Menus.hpp>
 //---------------------------------------------------------------------------
 class TFormClanoviPosudbe : public TForm
 {
@@ -52,9 +53,14 @@ __published:	// IDE-managed Components
 	TStringField *TPosudbeNazivKnjige;
 	TADOConnection *ADOConnection1;
 	TDBNavigator *DBNavigator1;
+	TMainMenu *MainMenu1;
+	TMenuItem *Menu;
+	TMenuItem *Import1;
+	TMenuItem *Export1;
 	void __fastcall btnTraziClick(TObject *Sender);
 	void __fastcall btnNovaPosudbaClick(TObject *Sender);
 	void __fastcall gridClanoviDblClick(TObject *Sender);
+	void __fastcall Import1Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFormClanoviPosudbe(TComponent* Owner);

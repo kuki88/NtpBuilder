@@ -27,6 +27,7 @@ object formPosudbe: TformPosudbe
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = gridPosudbeCellClick
     Columns = <
       item
         Expanded = False
@@ -70,48 +71,47 @@ object formPosudbe: TformPosudbe
       end>
   end
   object btnNovaPosudba: TButton
-    Left = 8
-    Top = 221
-    Width = 89
-    Height = 44
+    Left = 224
+    Top = 273
+    Width = 81
+    Height = 34
     Caption = 'Nova Posudba'
     TabOrder = 1
     OnClick = btnNovaPosudbaClick
   end
   object btnObrisi: TButton
-    Left = 8
-    Top = 271
-    Width = 89
-    Height = 42
+    Left = 224
+    Top = 340
+    Width = 81
+    Height = 36
     Caption = 'Obrisi posudbu'
     TabOrder = 2
     OnClick = btnObrisiClick
   end
   object btnProdulji: TButton
-    Left = 8
-    Top = 319
-    Width = 89
-    Height = 39
+    Left = 224
+    Top = 216
+    Width = 81
+    Height = 34
     Caption = 'Produlji'
     TabOrder = 3
+    OnClick = btnProduljiClick
   end
-  object editProdulji: TEdit
-    Left = 130
-    Top = 361
-    Width = 138
-    Height = 26
-    Alignment = taCenter
-    NumbersOnly = True
+  object Kalendar2: TMonthCalendar
+    Left = 8
+    Top = 216
+    Width = 197
+    Height = 160
+    Date = 44607.000000000000000000
     TabOrder = 4
-    Text = '7'
   end
-  object UpDown1: TUpDown
-    Left = 103
-    Top = 319
-    Width = 16
-    Height = 28
-    Associate = editProdulji
-    Position = 7
+  object Kalendar: TDateTimePicker
+    Left = 448
+    Top = 256
+    Width = 186
+    Height = 21
+    Date = 44607.000000000000000000
+    Time = 0.218114513889304400
     TabOrder = 5
   end
   object DKnjige: TDataSource

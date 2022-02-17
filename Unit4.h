@@ -12,6 +12,8 @@
 #include <Vcl.Grids.hpp>
 #include <Data.Win.ADODB.hpp>
 #include <Vcl.ComCtrls.hpp>
+#include <Vcl.WinXCalendars.hpp>
+#include <string>
 //---------------------------------------------------------------------------
 class TformPosudbe : public TForm
 {
@@ -38,13 +40,22 @@ __published:	// IDE-managed Components
 	TButton *btnNovaPosudba;
 	TButton *btnObrisi;
 	TButton *btnProdulji;
-	TEdit *editProdulji;
-	TUpDown *UpDown1;
+	TMonthCalendar *Kalendar2;
+	TDateTimePicker *Kalendar;
 	void __fastcall btnNovaPosudbaClick(TObject *Sender);
 	void __fastcall btnObrisiClick(TObject *Sender);
+	void __fastcall gridPosudbeCellClick(TColumn *Column);
+	void __fastcall btnProduljiClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TformPosudbe(TComponent* Owner);
+};
+
+class Datum{
+	public:
+	int godina;
+	int mjesec;
+	int datum;
 };
 //---------------------------------------------------------------------------
 extern PACKAGE TformPosudbe *formPosudbe;
