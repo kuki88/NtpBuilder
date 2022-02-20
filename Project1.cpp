@@ -8,6 +8,7 @@ USEFORM("Unit1.cpp", FormClanoviPosudbe);
 USEFORM("Unit2.cpp", FormPosudba);
 USEFORM("Unit4.cpp", formPosudbe);
 USEFORM("Unit5.cpp", formImport);
+USEFORM("Unit6.cpp", formEbooks);
 //---------------------------------------------------------------------------
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 {
@@ -19,6 +20,7 @@ int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 		Application->CreateForm(__classid(TFormPosudba), &FormPosudba);
 		Application->CreateForm(__classid(TformPosudbe), &formPosudbe);
 		Application->CreateForm(__classid(TformImport), &formImport);
+		Application->CreateForm(__classid(TformEbooks), &formEbooks);
 		Application->Run();
 	}
 	catch (Exception &exception)

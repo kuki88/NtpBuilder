@@ -324,5 +324,12 @@ object FormClanoviPosudbe: TFormClanoviPosudbe
         Caption = 'Export'
       end
     end
+    object Ebooks: TMenuItem
+      Caption = 'Ebooks'
+      object Download1: TMenuItem
+        Caption = 'Download'
+        OnClick = Download1Click
+      end
+    end
   end
 end

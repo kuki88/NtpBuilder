@@ -5,6 +5,7 @@
 #include "Unit2.h"
 #include "Unit4.h"
 #include "Unit5.h"
+#include "Unit6.h"
 
 // #include "Clanovi.h"
 //---------------------------------------------------------------------------
@@ -83,6 +84,12 @@ void __fastcall TFormClanoviPosudbe::gridClanoviDblClick(TObject *Sender)
 void __fastcall TFormClanoviPosudbe::Import1Click(TObject *Sender)
 {
 	formImport->ShowModal();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TFormClanoviPosudbe::Download1Click(TObject *Sender)
+{
+	formEbooks->ShowModal();
 }
 //---------------------------------------------------------------------------
 

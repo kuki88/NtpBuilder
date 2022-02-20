@@ -57,10 +57,13 @@ __published:	// IDE-managed Components
 	TMenuItem *Menu;
 	TMenuItem *Import1;
 	TMenuItem *Export1;
+	TMenuItem *Ebooks;
+	TMenuItem *Download1;
 	void __fastcall btnTraziClick(TObject *Sender);
 	void __fastcall btnNovaPosudbaClick(TObject *Sender);
 	void __fastcall gridClanoviDblClick(TObject *Sender);
 	void __fastcall Import1Click(TObject *Sender);
+	void __fastcall Download1Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFormClanoviPosudbe(TComponent* Owner);
