@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899.12.30 00:00:00.000.794,D:\C++ Builder Projects\Knjiznica\Unit3.h=D:\C++ Builder Projects\Knjiznica\Clanovi.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.275,D:\C++ Builder Projects\Unit1.h=D:\C++ Builder Projects\Knjiznica\Unit1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.916,D:\C++ Builder Projects\Project1.cbproj=D:\C++ Builder Projects\Knjiznica\Project1.cbproj</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.038,C:\Users\Jakov\Documents\GitHub\NtpBuilder\Unit3.cpp=</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.578,=C:\Users\Jakov\Documents\GitHub\NtpBuilder\Unit3.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.712,=D:\C++ Builder Projects\Knjiznica\Unit2.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.275,D:\C++ Builder Projects\Unit1.cpp=D:\C++ Builder Projects\Knjiznica\Unit1.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.485,=D:\C++ Builder Projects\Unit1.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.998,=D:\C++ Builder Projects\Unit1.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.455,=D:\C++ Builder Projects\Knjiznica\Unit2.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.845,D:\C++ Builder Projects\Knjiznica\Unit2.cpp=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.275,D:\C++ Builder Projects\Knjiznica\Unit1.dfm=D:\C++ Builder Projects\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.275,D:\C++ Builder Projects\Knjiznica\Unit1.h=D:\C++ Builder Projects\Unit1.h</Transaction>
     <Transaction>1899.12.30 00:00:00.000.558,=C:\Users\Jakov\Documents\GitHub\NtpBuilder\something.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.794,D:\C++ Builder Projects\Knjiznica\Unit3.cpp=D:\C++ Builder Projects\Knjiznica\Clanovi.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.345,=C:\Users\Jakov\Documents\GitHub\NtpBuilder\Unit6.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.890,=C:\Users\Jakov\Documents\GitHub\NtpBuilder\Unit4.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.578,=C:\Users\Jakov\Documents\GitHub\NtpBuilder\Unit3.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.455,=D:\C++ Builder Projects\Knjiznica\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.998,=D:\C++ Builder Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.485,=D:\C++ Builder Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.275,D:\C++ Builder Projects\Knjiznica\Unit1.cpp=D:\C++ Builder Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.916,D:\C++ Builder Projects\Knjiznica\Project1.cbproj=D:\C++ Builder Projects\Project1.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.845,D:\C++ Builder Projects\Knjiznica\Unit2.cpp=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.038,C:\Users\Jakov\Documents\GitHub\NtpBuilder\Unit3.cpp=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.098,D:\C++ Builder Projects\Knjiznica\Project1PCH1.h=D:\C++ Builder Projects\Project1PCH1.h</Transaction>
     <Transaction>1899.12.30 00:00:00.000.017,=C:\Users\Jakov\Documents\GitHub\NtpBuilder\Unit5.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.275,D:\C++ Builder Projects\Unit1.dfm=D:\C++ Builder Projects\Knjiznica\Unit1.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.834,=D:\C++ Builder Projects\Knjiznica\Unit3.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.942,=D:\C++ Builder Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.890,=C:\Users\Jakov\Documents\GitHub\NtpBuilder\Unit4.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.794,D:\C++ Builder Projects\Knjiznica\Clanovi.cpp=D:\C++ Builder Projects\Knjiznica\Unit3.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.794,D:\C++ Builder Projects\Knjiznica\Clanovi.h=D:\C++ Builder Projects\Knjiznica\Unit3.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.345,=C:\Users\Jakov\Documents\GitHub\NtpBuilder\Unit6.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.261,=D:\C++ Builder Projects\Project1PCH1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.098,D:\C++ Builder Projects\Project1PCH1.h=D:\C++ Builder Projects\Knjiznica\Project1PCH1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.670,=D:\C++ Builder Projects\Knjiznica\Unit3.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.942,=D:\C++ Builder Projects\Project1PCH1.h</Transaction>
     <Transaction>1899.12.30 00:00:00.000.285,=D:\C++ Builder Projects\Knjiznica\Unit3.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.670,=D:\C++ Builder Projects\Knjiznica\Unit3.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.834,=D:\C++ Builder Projects\Knjiznica\Unit3.cpp</Transaction>
   </Transactions>
 </BorlandProject>

@@ -41,6 +41,7 @@ void __fastcall TformEbooks::Button1Click(TObject *Sender)
 void __fastcall TformEbooks::DownloadWorkBegin(TObject *ASender, TWorkMode AWorkMode,
           __int64 AWorkCountMax)
 {
+	Postotak->Caption="Download!";
 	ProgressBar1->Position = 0;
     ProgressBar1->Max = AWorkCountMax;
 }
@@ -49,8 +50,9 @@ void __fastcall TformEbooks::DownloadWorkBegin(TObject *ASender, TWorkMode AWork
 void __fastcall TformEbooks::DownloadWork(TObject *ASender, TWorkMode AWorkMode, __int64 AWorkCount)
 
 {
+	Postotak->Caption=AWorkCount*100/ProgressBar1->Max;
 	ProgressBar1->Position = AWorkCount;
-    Application->ProcessMessages();
+	Application->ProcessMessages();
 }
 //---------------------------------------------------------------------------
 
@@ -60,8 +62,55 @@ void __fastcall TformEbooks::DownloadWorkEnd(TObject *ASender, TWorkMode AWorkMo
 {
 	ProgressBar1->Position = 0;
 	ShowMessage("Hosana u visini!");
+	Postotak->Caption="Finished!";
 }
 //---------------------------------------------------------------------------
 
+
+
+void __fastcall TformEbooks::editSearchKeyPress(TObject *Sender, System::WideChar &Key)
+
+{
+	UnicodeString query2 ="Select url FROM Knjige WHERE Naziv LIKE '" + DBGrid1->SelectedField->Text
+						+ "%' OR WHERE Autor LIKE '" + DBGrid1->SelectedField->Text + "%'";
+	if(Key == VK_RETURN){
+		TEknjige->Filtered = false;
+		TLocateOptions searchOptions;
+		searchOptions.Clear();
+		searchOptions << loPartialKey;
+		if(editSearch->Text.IsEmpty())
+		{
+			TEknjige->Filtered = false;
+			return;
+		}
+
+
+		if(TEknjige->Locate("Naziv", editSearch->Text, searchOptions))
+		{
+			TEknjige->Filter = "Naziv LIKE '" + editSearch->Text.LowerCase() + "%'";
+			TEknjige->Filtered = true;
+		}
+		else ShowMessage("Nije pronaðeno");
+    }
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TformEbooks::Button2Click(TObject *Sender)
+{
+	Thotter->BitsPerSec = 81920;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TformEbooks::Button3Click(TObject *Sender)
+{
+	Thotter->BitsPerSec = 819200;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TformEbooks::Button4Click(TObject *Sender)
+{
+	Thotter->BitsPerSec = 1638400;
+}
+//---------------------------------------------------------------------------
 
 
